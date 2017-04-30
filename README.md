@@ -40,7 +40,7 @@ postgresql 要另建my_db
 
 changelog
 
-> update in 2017/04/31
+> update in 2017/04/31  
 > `rm -rf static`  
 > Execute `export $(cat .env)` then `python manage.py collectstatic`  
 > Django static dircetly serve by nginx, so I chaged nginx Dockerfile.  
