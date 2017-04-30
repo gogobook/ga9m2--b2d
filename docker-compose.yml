@@ -1,0 +1,55 @@
+version: '2'
+
+services:
+  web:
+    build: ./web
+    # container_name: web
+    networks:
+      - front-tier
+      - back-tier
+    volumes:
+      - /media/lee/78b3df3f-70e8-4101-b632-d3b341665d5f/dev/dockerizing-django6/web:/usr/src/app
+      
+    env_file: .env
+    depends_on:
+       - postgres
+    command: /usr/local/bin/gunicorn wsgi:application -w 2 -b :8000
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /media/lee/78b3df3f-70e8-4101-b632-d3b341665d5f/dev/dockerizing-django6/web/public/static:/static # 這裡把web (也就是django)的static files放在nginx中。
+    depends_on:
+       - web
+    networks:
+      - front-tier
+
+  postgres:
+    image: postgres:latest
+    # container_name: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+    networks:
+      - back-tier 
+    
+  redis:
+    image: redis:latest
+    # container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    networks:
+      - back-tier 
+      
+volumes: 
+  pgdata:
+  redisdata:
+
+networks:
+  front-tier:
+  back-tier:
