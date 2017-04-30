@@ -41,12 +41,12 @@ postgresql 要另建my_db
 changelog
 
 > update in 2017/04/31
-> `rm -rf static`
-> Execute `export $(cat .env)` then `python manage.py collectstatic` 
-> Django static dircetly serve by nginx, so I chaged nginx Dockerfile.
-> In docker-compose, nginx add volume from web/static to /static 
+> `rm -rf static`  
+> Execute `export $(cat .env)` then `python manage.py collectstatic`  
+> Django static dircetly serve by nginx, so I chaged nginx Dockerfile.  
+> In docker-compose, nginx add volume from web/static to /static  
 
-> update in 2017/04/16.
-> Dockerfile of nginx changed.
-> Dockerfile of web update to python:3.6
+> update in 2017/04/16.  
+> Dockerfile of nginx changed.  
+> Dockerfile of web update to python:3.6  
 
