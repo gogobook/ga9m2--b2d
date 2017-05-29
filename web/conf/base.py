@@ -38,6 +38,7 @@ ADMINS = (
 )
 
 
+AUTH_USER_MODEL='user.Profile'
 
 MANAGERS = ADMINS
 
@@ -289,6 +290,8 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'apps.gateway',     # For allowing dashboard access
     'widget_tweaks',
+    'phonenumber_field',
+    'user',
 ] + oscar.get_core_apps()
 
 # Add Oscar's custom auth backend so users can sign in using their email
@@ -421,10 +424,17 @@ EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '
 # TLS Port
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'o988184254@gmail.com'
+# # Gmail setting
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'o988184254@gmail.com'
+# # Application Key
+# EMAIL_HOST_PASSWORD = 'aunizgccgxvijwxi'
+
+# gandi mail
+EMAIL_HOST = 'mail.gandi.net'
+EMAIL_HOST_USER = 'service@safecloud.com.tw'
 # Application Key
-EMAIL_HOST_PASSWORD = 'fet198943'
+EMAIL_HOST_PASSWORD = '0988][poiuy'
 
 # Try and import local settings which can be used to override any of the above.
 try:

@@ -3,32 +3,57 @@ Sample user/profile models for testing.  These aren't enabled by default in the
 sandbox
 """
 
-from django.contrib.auth.models import (
-    AbstractUser, BaseUserManager, AbstractBaseUser)
 from django.db import models
 from django.utils import timezone
-from django.utils.encoding import python_2_unicode_compatible
+from phonenumber_field.modelfields import PhoneNumberField
 
-from oscar.core import compat
-from oscar.apps.customer import abstract_models
+from django.contrib.auth.models import Permission
+from oscar.apps.customer.abstract_models import AbstractUser, UserManager # 如果使用 oscar的 AbstractUser, 則會報要有
 
+from oscar.core.loading import get_model
 
-class Profile(models.Model):
+Partner = get_model('partner', 'Partner')
+
+class MyUserManager(UserManager):
+
+    def create_user(self, email, password=None, **extra_fields):
+        """
+        Creates and saves a User with the given email and
+        password.
+        """
+        now = timezone.now()
+        if not email:
+            raise ValueError('The given email must be set')
+        email = UserManager.normalize_email(email)
+        user = self.model(
+            email=email, is_staff=False, is_active=True,
+            is_superuser=False,
+            last_login=now, date_joined=now, **extra_fields)
+
+        user.set_password(password)
+        user.save(using=self._db)
+        be_a_partner = Partner(name=user.email)
+        be_a_partner.save()
+        be_a_partner.users.add(user)
+        if not user.is_staff:
+            dashboard_access_perm = Permission.objects.get(
+                codename='dashboard_access',
+                content_type__app_label='partner')
+            user.user_permissions.add(dashboard_access_perm)
+        return user
+
+class Profile(AbstractUser):
     """
     Dummy profile model used for testing
     """
-    user = models.OneToOneField(compat.AUTH_USER_MODEL, related_name="profile",
-                                on_delete=models.CASCADE)
-    MALE, FEMALE = 'M', 'F'
-    choices = (
-        (MALE, 'Male'),
-        (FEMALE, 'Female'))
-
+    phone_number = PhoneNumberField(blank=True)
+    fax_number = PhoneNumberField(blank=True)
     submitted_notifications = models.BooleanField(
         verbose_name=_('submitted notifications'),
         default=True,
         help_text=_("Receive notification when a page is submitted for moderation")
     )
+
 
     approved_notifications = models.BooleanField(
         verbose_name=_('approved notifications'),
@@ -70,44 +95,7 @@ class Profile(models.Model):
     last_post_hash = models.CharField(_("last post hash"), max_length=32, blank=True)
     last_post_on = models.DateTimeField(_("last post on"), null=True, blank=True)
 
-
-# A simple extension of the core User model for Django 1.5+
-class ExtendedUserModel(AbstractUser):
-    twitter_username = models.CharField(max_length=255, unique=True)
+    objects = MyUserManager()
 
 
-class CustomUserManager(BaseUserManager):
 
-    def create_user(self, email, password=None):
-        now = timezone.now()
-        email = BaseUserManager.normalize_email(email)
-        user = self.model(email=email, last_login=now)
-        user.set_password(password)
-        user.save(using=self._db)
-        return user
-
-    def create_superuser(self, email, password):
-        return self.create_user(email, password)
-
-# A user model which doesn't extend AbstractUser
-@python_2_unicode_compatible
-class CustomUserModel(AbstractBaseUser):
-    name = models.CharField(max_length=255, blank=True)
-    email = models.EmailField(unique=True)
-    twitter_username = models.CharField(max_length=255, unique=True)
-
-    USERNAME_FIELD = 'email'
-
-    objects = CustomUserManager()
-
-    def __str__(self):
-        return self.email
-
-    def get_full_name(self):
-        return self.name
-
-    get_short_name = get_full_name
-
-# A simple extension of the core Oscar User model
-class ExtendedOscarUserModel(abstract_models.AbstractUser):
-    twitter_username = models.CharField(max_length=255, unique=True)
