@@ -8,5 +8,5 @@ class StockRecordFormSet(OscarStockRecordFormSet):
         form = super(StockRecordFormSet, self)._construct_form(i, **kwargs)
         del form.fields['price_currency']
         del form.fields['price_excl_tax']
-        del form.fields['price_retail']
+        # del form.fields['price_retail']
         return form
