@@ -1,12 +1,15 @@
 """
 Sample user/profile models for testing.  These aren't enabled by default in the
 sandbox
+僅用於測試，sandbox 預設不啟用?
 """
-
 from django.db import models
 from django.utils import timezone
 from phonenumber_field.modelfields import PhoneNumberField
+from django.utils.translation import ugettext_lazy as _
 
+# ~~from oscar.core import compat # 這裡其實指向'auth.user'，以至於會跟 oscar.user不相容。~~
+# oscar 有用一個機制，不會不相容
 from django.contrib.auth.models import Permission
 from oscar.apps.customer.abstract_models import AbstractUser, UserManager # 如果使用 oscar的 AbstractUser, 則會報要有
 

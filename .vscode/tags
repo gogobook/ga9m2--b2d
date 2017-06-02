@@ -6,167 +6,158 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ADMINS	../web/conf/base.py	/^ADMINS = ($/;"	kind:variable	line:36
 ALLOWED_HOSTS	../web/conf/base.py	/^ALLOWED_HOSTS = [$/;"	kind:variable	line:27
-APPEND_SLASH	../web/conf/base.py	/^APPEND_SLASH = True$/;"	kind:variable	line:302
-AUTHENTICATION_BACKENDS	../web/conf/base.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:296
+APPEND_SLASH	../web/conf/base.py	/^APPEND_SLASH = True$/;"	kind:variable	line:305
+AUTHENTICATION_BACKENDS	../web/conf/base.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:299
+AUTH_USER_MODEL	../web/conf/base.py	/^AUTH_USER_MODEL='user.Profile'$/;"	kind:variable	line:41
 BASE_DIR	../web/conf/base.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) $/;"	kind:variable	line:16
-CACHES	../web/conf/base.py	/^CACHES = {$/;"	kind:variable	line:55
+CACHES	../web/conf/base.py	/^CACHES = {$/;"	kind:variable	line:56
 Category	../web/apps/sitemaps.py	/^Category = get_model('catalogue', 'Category')$/;"	kind:variable	line:9
 CategorySitemap	../web/apps/sitemaps.py	/^class CategorySitemap(I18nSitemap):$/;"	kind:class	line:54
 ChangesOwnerName	../web/apps/offers.py	/^class ChangesOwnerName(models.Benefit):$/;"	kind:class	line:4
-CustomUserManager	../web/apps/user/models.py	/^class CustomUserManager(BaseUserManager):$/;"	kind:class	line:79
-CustomUserModel	../web/apps/user/models.py	/^class CustomUserModel(AbstractBaseUser):$/;"	kind:class	line:94
-DATABASES	../web/conf/base.py	/^DATABASES = {$/;"	kind:variable	line:44
+DATABASES	../web/conf/base.py	/^DATABASES = {$/;"	kind:variable	line:45
 DEBUG	../web/conf/base.py	/^DEBUG = os.environ['DEBUG']$/;"	kind:variable	line:20
-DISPLAY_VERSION	../web/conf/base.py	/^DISPLAY_VERSION = False$/;"	kind:variable	line:352
-EMAIL_BACKEND	../web/conf/base.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:419
-EMAIL_HOST	../web/conf/base.py	/^EMAIL_HOST = 'smtp.gmail.com'$/;"	kind:variable	line:424
-EMAIL_HOST_PASSWORD	../web/conf/base.py	/^EMAIL_HOST_PASSWORD = 'fet198943'$/;"	kind:variable	line:427
-EMAIL_HOST_USER	../web/conf/base.py	/^EMAIL_HOST_USER = 'o988184254@gmail.com'$/;"	kind:variable	line:425
-EMAIL_PORT	../web/conf/base.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:422
-EMAIL_SUBJECT_PREFIX	../web/conf/base.py	/^EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '$/;"	kind:variable	line:420
-EMAIL_USE_TLS	../web/conf/base.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:423
-ExtendedOscarUserModel	../web/apps/user/models.py	/^class ExtendedOscarUserModel(abstract_models.AbstractUser):$/;"	kind:class	line:112
-ExtendedUserModel	../web/apps/user/models.py	/^class ExtendedUserModel(AbstractUser):$/;"	kind:class	line:75
+DISPLAY_VERSION	../web/conf/base.py	/^DISPLAY_VERSION = False$/;"	kind:variable	line:355
+EMAIL_BACKEND	../web/conf/base.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:422
+EMAIL_HOST	../web/conf/base.py	/^EMAIL_HOST = 'mail.gandi.net'$/;"	kind:variable	line:434
+EMAIL_HOST_PASSWORD	../web/conf/base.py	/^EMAIL_HOST_PASSWORD = '0988][poiuy'$/;"	kind:variable	line:437
+EMAIL_HOST_USER	../web/conf/base.py	/^EMAIL_HOST_USER = 'service@safecloud.com.tw'$/;"	kind:variable	line:435
+EMAIL_PORT	../web/conf/base.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:425
+EMAIL_SUBJECT_PREFIX	../web/conf/base.py	/^EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '$/;"	kind:variable	line:423
+EMAIL_USE_TLS	../web/conf/base.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:426
 GatewayForm	../web/apps/gateway/forms.py	/^class GatewayForm(forms.Form):$/;"	kind:class	line:7
 GatewayView	../web/apps/gateway/views.py	/^class GatewayView(generic.FormView):$/;"	kind:class	line:18
-HAYSTACK_CONNECTIONS	../web/conf/base.py	/^HAYSTACK_CONNECTIONS = {$/;"	kind:variable	line:314
+HAYSTACK_CONNECTIONS	../web/conf/base.py	/^HAYSTACK_CONNECTIONS = {$/;"	kind:variable	line:317
 I18nSitemap	../web/apps/sitemaps.py	/^class I18nSitemap(Sitemap):$/;"	kind:class	line:20
-INSTALLED_APPS	../web/conf/base.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:276
-INTERNAL_IPS	../web/conf/base.py	/^INTERNAL_IPS = ['127.0.0.1', '::1']$/;"	kind:variable	line:333
-LANGUAGES	../web/conf/base.py	/^LANGUAGES = ($/;"	kind:variable	line:79
-LANGUAGE_CODE	../web/conf/base.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:74
-LOGGING	../web/conf/base.py	/^LOGGING = {$/;"	kind:variable	line:199
-LOGIN_REDIRECT_URL	../web/conf/base.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:301
-MANAGERS	../web/conf/base.py	/^MANAGERS = ADMINS$/;"	kind:variable	line:42
-MEDIA_ROOT	../web/conf/base.py	/^MEDIA_ROOT = location("public\/media")$/;"	kind:variable	line:115
-MEDIA_URL	../web/conf/base.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:120
-MESSAGE_TAGS	../web/conf/base.py	/^MESSAGE_TAGS = {$/;"	kind:variable	line:309
-MIDDLEWARE	../web/conf/base.py	/^MIDDLEWARE = [$/;"	kind:variable	line:169
+INSTALLED_APPS	../web/conf/base.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:277
+INTERNAL_IPS	../web/conf/base.py	/^INTERNAL_IPS = ['127.0.0.1', '::1']$/;"	kind:variable	line:336
+LANGUAGES	../web/conf/base.py	/^LANGUAGES = ($/;"	kind:variable	line:80
+LANGUAGE_CODE	../web/conf/base.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:75
+LOGGING	../web/conf/base.py	/^LOGGING = {$/;"	kind:variable	line:200
+LOGIN_REDIRECT_URL	../web/conf/base.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:304
+MANAGERS	../web/conf/base.py	/^MANAGERS = ADMINS$/;"	kind:variable	line:43
+MEDIA_ROOT	../web/conf/base.py	/^MEDIA_ROOT = location("public\/media")$/;"	kind:variable	line:116
+MEDIA_URL	../web/conf/base.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:121
+MESSAGE_TAGS	../web/conf/base.py	/^MESSAGE_TAGS = {$/;"	kind:variable	line:312
+MIDDLEWARE	../web/conf/base.py	/^MIDDLEWARE = [$/;"	kind:variable	line:170
 Meta	../web/apps/offers.py	/^    class Meta:$/;"	kind:class	line:6
-OSCAR_ALLOW_ANON_CHECKOUT	../web/conf/base.py	/^OSCAR_ALLOW_ANON_CHECKOUT = True$/;"	kind:variable	line:347
-OSCAR_INITIAL_LINE_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_LINE_STATUS = 'Pending'$/;"	kind:variable	line:362
-OSCAR_INITIAL_ORDER_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_ORDER_STATUS = 'Pending'$/;"	kind:variable	line:361
-OSCAR_ORDER_STATUS_CASCADE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_CASCADE = {$/;"	kind:variable	line:374
-OSCAR_ORDER_STATUS_PIPELINE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_PIPELINE = {$/;"	kind:variable	line:365
-OSCAR_RECENTLY_VIEWED_PRODUCTS	../web/conf/base.py	/^OSCAR_RECENTLY_VIEWED_PRODUCTS = 20$/;"	kind:variable	line:346
-OSCAR_SHOP_TAGLINE	../web/conf/base.py	/^OSCAR_SHOP_TAGLINE = 'Sandbox'$/;"	kind:variable	line:344
+MyUserManager	../web/apps/user/models.py	/^class MyUserManager(UserManager):$/;"	kind:class	line:17
+OSCAR_ALLOW_ANON_CHECKOUT	../web/conf/base.py	/^OSCAR_ALLOW_ANON_CHECKOUT = True$/;"	kind:variable	line:350
+OSCAR_INITIAL_LINE_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_LINE_STATUS = 'Pending'$/;"	kind:variable	line:365
+OSCAR_INITIAL_ORDER_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_ORDER_STATUS = 'Pending'$/;"	kind:variable	line:364
+OSCAR_ORDER_STATUS_CASCADE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_CASCADE = {$/;"	kind:variable	line:377
+OSCAR_ORDER_STATUS_PIPELINE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_PIPELINE = {$/;"	kind:variable	line:368
+OSCAR_RECENTLY_VIEWED_PRODUCTS	../web/conf/base.py	/^OSCAR_RECENTLY_VIEWED_PRODUCTS = 20$/;"	kind:variable	line:349
+OSCAR_SHOP_TAGLINE	../web/conf/base.py	/^OSCAR_SHOP_TAGLINE = 'Sandbox'$/;"	kind:variable	line:347
+Partner	../web/apps/user/models.py	/^Partner = get_model('partner', 'Partner')$/;"	kind:variable	line:15
 Product	../web/apps/sitemaps.py	/^Product = get_model('catalogue', 'Product')$/;"	kind:variable	line:8
 ProductSitemap	../web/apps/sitemaps.py	/^class ProductSitemap(I18nSitemap):$/;"	kind:class	line:48
-Profile	../web/apps/user/models.py	/^class Profile(models.Model):$/;"	kind:class	line:16
-RAVEN_CONFIG	../web/conf/base.py	/^    RAVEN_CONFIG = {'dsn': env('SENTRY_DSN', default=None)}$/;"	kind:variable	line:393
-ROOT_URLCONF	../web/conf/base.py	/^ROOT_URLCONF = 'urls'$/;"	kind:variable	line:191
+Profile	../web/apps/user/models.py	/^class Profile(AbstractUser):$/;"	kind:class	line:45
+RAVEN_CONFIG	../web/conf/base.py	/^    RAVEN_CONFIG = {'dsn': env('SENTRY_DSN', default=None)}$/;"	kind:variable	line:396
+ROOT_URLCONF	../web/conf/base.py	/^ROOT_URLCONF = 'urls'$/;"	kind:variable	line:192
 SECRET_KEY	../web/conf/base.py	/^SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:10
-SESSION_SERIALIZER	../web/conf/base.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'$/;"	kind:variable	line:417
-SITE_ID	../web/conf/base.py	/^SITE_ID = 1$/;"	kind:variable	line:103
+SESSION_SERIALIZER	../web/conf/base.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'$/;"	kind:variable	line:420
+SITE_ID	../web/conf/base.py	/^SITE_ID = 1$/;"	kind:variable	line:104
 SQL_DEBUG	../web/conf/base.py	/^SQL_DEBUG = DEBUG$/;"	kind:variable	line:21
-STATICFILES_DIRS	../web/conf/base.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:125
-STATICFILES_FINDERS	../web/conf/base.py	/^STATICFILES_FINDERS = ($/;"	kind:variable	line:128
-STATICFILES_STORAGE	../web/conf/base.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:124
-STATIC_ROOT	../web/conf/base.py	/^STATIC_ROOT = location('public\/static')$/;"	kind:variable	line:123
-STATIC_URL	../web/conf/base.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:122
+STATICFILES_DIRS	../web/conf/base.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:126
+STATICFILES_FINDERS	../web/conf/base.py	/^STATICFILES_FINDERS = ($/;"	kind:variable	line:129
+STATICFILES_STORAGE	../web/conf/base.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:125
+STATIC_ROOT	../web/conf/base.py	/^STATIC_ROOT = location('public\/static')$/;"	kind:variable	line:124
+STATIC_URL	../web/conf/base.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:123
 StaticSitemap	../web/apps/sitemaps.py	/^class StaticSitemap(I18nSitemap):$/;"	kind:class	line:39
-TEMPLATES	../web/conf/base.py	/^TEMPLATES = [$/;"	kind:variable	line:135
-TEST_RUNNER	../web/conf/base.py	/^TEST_RUNNER = 'django.test.runner.DiscoverRunner'$/;"	kind:variable	line:70
-THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:405
-THUMBNAIL_KEY_PREFIX	../web/conf/base.py	/^THUMBNAIL_KEY_PREFIX = 'oscar-sandbox'$/;"	kind:variable	line:406
-THUMBNAIL_KVSTORE	../web/conf/base.py	/^THUMBNAIL_KVSTORE = env($/;"	kind:variable	line:407
-THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)$/;"	kind:variable	line:410
-TIME_ZONE	../web/conf/base.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:68
-USERNAME_FIELD	../web/apps/user/models.py	/^    USERNAME_FIELD = 'email'$/;"	kind:variable	line:99
-USE_I18N	../web/conf/base.py	/^USE_I18N = True$/;"	kind:variable	line:107
-USE_L10N	../web/conf/base.py	/^USE_L10N = True$/;"	kind:variable	line:111
-USE_LESS	../web/conf/base.py	/^USE_LESS = False$/;"	kind:variable	line:386
-USE_TZ	../web/conf/base.py	/^USE_TZ = True$/;"	kind:variable	line:67
+TEMPLATES	../web/conf/base.py	/^TEMPLATES = [$/;"	kind:variable	line:136
+TEST_RUNNER	../web/conf/base.py	/^TEST_RUNNER = 'django.test.runner.DiscoverRunner'$/;"	kind:variable	line:71
+THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:408
+THUMBNAIL_KEY_PREFIX	../web/conf/base.py	/^THUMBNAIL_KEY_PREFIX = 'oscar-sandbox'$/;"	kind:variable	line:409
+THUMBNAIL_KVSTORE	../web/conf/base.py	/^THUMBNAIL_KVSTORE = env($/;"	kind:variable	line:410
+THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)$/;"	kind:variable	line:413
+TIME_ZONE	../web/conf/base.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:69
+USE_I18N	../web/conf/base.py	/^USE_I18N = True$/;"	kind:variable	line:108
+USE_L10N	../web/conf/base.py	/^USE_L10N = True$/;"	kind:variable	line:112
+USE_LESS	../web/conf/base.py	/^USE_LESS = False$/;"	kind:variable	line:389
+USE_TZ	../web/conf/base.py	/^USE_TZ = True$/;"	kind:variable	line:68
+UserConfig	../web/apps/user/apps.py	/^class UserConfig(AppConfig):$/;"	kind:class	line:4
 __init__	../web/apps/sitemaps.py	/^    def __init__(self, language):$/;"	kind:member	line:25
 __init__.py	../web/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/gateway/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/user/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/conf/__init__.py	1;"	kind:file	line:1
-__str__	../web/apps/user/models.py	/^    def __str__(self):$/;"	kind:member	line:103
 app_label	../web/apps/offers.py	/^        app_label = 'sandbox'$/;"	kind:variable	line:8
 application	../web/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:7
 apply	../web/apps/offers.py	/^    def apply(self, basket, condition, offer=None):$/;"	kind:member	line:10
 apply_deferred	../web/apps/offers.py	/^    def apply_deferred(self, basket, order, application):$/;"	kind:member	line:15
-approved_notifications	../web/apps/user/models.py	/^    approved_notifications = models.BooleanField($/;"	kind:variable	line:33
+approved_notifications	../web/apps/user/models.py	/^    approved_notifications = models.BooleanField($/;"	kind:variable	line:58
+apps.py	../web/apps/user/apps.py	1;"	kind:file	line:1
 base.py	../web/conf/base.py	1;"	kind:file	line:1
 base_sitemaps	../web/apps/sitemaps.py	/^base_sitemaps = {}$/;"	kind:variable	line:67
-choices	../web/apps/user/models.py	/^    choices = ($/;"	kind:variable	line:23
 clean_email	../web/apps/gateway/forms.py	/^    def clean_email(self):$/;"	kind:member	line:10
-comment_count	../web/apps/user/models.py	/^    comment_count = models.PositiveIntegerField(_("comment count"), default=0)$/;"	kind:variable	line:68
+comment_count	../web/apps/user/models.py	/^    comment_count = models.PositiveIntegerField(_("comment count"), default=0)$/;"	kind:variable	line:93
 create_dashboard_user	../web/apps/gateway/views.py	/^    def create_dashboard_user(self, username, email, password):$/;"	kind:member	line:38
-create_superuser	../web/apps/user/models.py	/^    def create_superuser(self, email, password):$/;"	kind:member	line:89
-create_user	../web/apps/user/models.py	/^    def create_user(self, email, password=None):$/;"	kind:member	line:81
-default	../web/apps/user/models.py	/^        default=''$/;"	kind:variable	line:49
-default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:29
-default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:35
-default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:41
-default	../web/conf/base.py	/^    default='sorl.thumbnail.kvstores.cached_db_kvstore.KVStore')$/;"	kind:variable	line:409
+create_user	../web/apps/user/models.py	/^    def create_user(self, email, password=None, **extra_fields):$/;"	kind:member	line:19
+default	../web/apps/user/models.py	/^        default=''$/;"	kind:variable	line:74
+default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:53
+default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:60
+default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:66
+default	../web/conf/base.py	/^    default='sorl.thumbnail.kvstores.cached_db_kvstore.KVStore')$/;"	kind:variable	line:412
 description	../web/apps/offers.py	/^    def description(self):$/;"	kind:member	line:22
 document_root	../web/urls.py	/^                          document_root=settings.MEDIA_ROOT)$/;"	kind:variable	line:45
 email	../web/apps/gateway/forms.py	/^    email = forms.EmailField()$/;"	kind:variable	line:8
-email	../web/apps/user/models.py	/^    email = models.EmailField(unique=True)$/;"	kind:variable	line:96
 env	../web/conf/base.py	/^env = environ.Env()$/;"	kind:variable	line:7
+fax_number	../web/apps/user/models.py	/^    fax_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:50
 form_class	../web/apps/gateway/views.py	/^    form_class = forms.GatewayForm$/;"	kind:variable	line:20
 form_valid	../web/apps/gateway/views.py	/^    def form_valid(self, form):$/;"	kind:member	line:22
 forms.py	../web/apps/gateway/forms.py	1;"	kind:file	line:1
-get_full_name	../web/apps/user/models.py	/^    def get_full_name(self):$/;"	kind:member	line:106
 get_obj_location	../web/apps/sitemaps.py	/^    def get_obj_location(self, obj):$/;"	kind:member	line:29
 get_obj_location	../web/apps/sitemaps.py	/^    def get_obj_location(self, obj):$/;"	kind:member	line:44
-get_short_name	../web/apps/user/models.py	/^    get_short_name = get_full_name$/;"	kind:variable	line:109
-gettext_noop	../web/conf/base.py	/^gettext_noop = lambda s: s$/;"	kind:variable	line:78
-help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:58
-help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:62
-help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when a page is submitted for moderation")$/;"	kind:variable	line:30
-help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is approved")$/;"	kind:variable	line:36
-help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is rejected")$/;"	kind:variable	line:42
-help_text	../web/apps/user/models.py	/^        help_text=_("Select language for the admin"),$/;"	kind:variable	line:48
-is_moderator	../web/apps/user/models.py	/^    is_moderator = models.BooleanField(_('moderator status'), default=False)$/;"	kind:variable	line:55
-is_verified	../web/apps/user/models.py	/^    is_verified = models.BooleanField(_('verified'), default=False,$/;"	kind:variable	line:57
+gettext_noop	../web/conf/base.py	/^gettext_noop = lambda s: s$/;"	kind:variable	line:79
+help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:83
+help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:87
+help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when a page is submitted for moderation")$/;"	kind:variable	line:54
+help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is approved")$/;"	kind:variable	line:61
+help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is rejected")$/;"	kind:variable	line:67
+help_text	../web/apps/user/models.py	/^        help_text=_("Select language for the admin"),$/;"	kind:variable	line:73
+is_moderator	../web/apps/user/models.py	/^    is_moderator = models.BooleanField(_('moderator status'), default=False)$/;"	kind:variable	line:80
+is_verified	../web/apps/user/models.py	/^    is_verified = models.BooleanField(_('verified'), default=False,$/;"	kind:variable	line:82
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:41
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:50
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:56
 language_neutral_sitemaps	../web/apps/sitemaps.py	/^language_neutral_sitemaps = {$/;"	kind:variable	line:60
-last_ip	../web/apps/user/models.py	/^    last_ip = models.GenericIPAddressField(_("last ip"), blank=True, null=True)$/;"	kind:variable	line:53
-last_post_hash	../web/apps/user/models.py	/^    last_post_hash = models.CharField(_("last post hash"), max_length=32, blank=True)$/;"	kind:variable	line:70
-last_post_on	../web/apps/user/models.py	/^    last_post_on = models.DateTimeField(_("last post on"), null=True, blank=True)$/;"	kind:variable	line:71
-last_seen	../web/apps/user/models.py	/^    last_seen = models.DateTimeField(_("last seen"), auto_now=True)$/;"	kind:variable	line:52
+last_ip	../web/apps/user/models.py	/^    last_ip = models.GenericIPAddressField(_("last ip"), blank=True, null=True)$/;"	kind:variable	line:78
+last_post_hash	../web/apps/user/models.py	/^    last_post_hash = models.CharField(_("last post hash"), max_length=32, blank=True)$/;"	kind:variable	line:95
+last_post_on	../web/apps/user/models.py	/^    last_post_on = models.DateTimeField(_("last post on"), null=True, blank=True)$/;"	kind:variable	line:96
+last_seen	../web/apps/user/models.py	/^    last_seen = models.DateTimeField(_("last seen"), auto_now=True)$/;"	kind:variable	line:77
 local.example.py	../web/conf/local.example.py	1;"	kind:file	line:1
 location	../web/apps/sitemaps.py	/^    def location(self, obj):$/;"	kind:member	line:32
 location	../web/conf/base.py	/^location = lambda x: os.path.join($/;"	kind:variable	line:18
 logger	../web/apps/gateway/views.py	/^logger = logging.getLogger('gateway')$/;"	kind:variable	line:15
 manage.py	../web/manage.py	1;"	kind:file	line:1
-max_length	../web/apps/user/models.py	/^        max_length=10,$/;"	kind:variable	line:47
+max_length	../web/apps/user/models.py	/^        max_length=10,$/;"	kind:variable	line:72
 models.py	../web/apps/gateway/models.py	1;"	kind:file	line:1
 models.py	../web/apps/user/models.py	1;"	kind:file	line:1
 name	../web/apps/offers.py	/^    name = description$/;"	kind:variable	line:25
-name	../web/apps/user/models.py	/^    name = models.CharField(max_length=255, blank=True)$/;"	kind:variable	line:95
+name	../web/apps/user/apps.py	/^    name = 'user'$/;"	kind:variable	line:5
 name	../web/urls.py	/^        name='django.contrib.sitemaps.views.sitemap')$/;"	kind:variable	line:29
-objects	../web/apps/user/models.py	/^    objects = CustomUserManager()$/;"	kind:variable	line:101
+objects	../web/apps/user/models.py	/^    objects = MyUserManager()$/;"	kind:variable	line:98
 offers.py	../web/apps/offers.py	1;"	kind:file	line:1
-on_delete	../web/apps/user/models.py	/^                                on_delete=models.CASCADE)$/;"	kind:variable	line:21
-on_sale	../web/apps/user/models.py	/^    on_sale = models.BooleanField(_('on sale status'), default=False)$/;"	kind:variable	line:56
-phone_number_verified	../web/apps/user/models.py	/^    phone_number_verified = models.BooleanField(_('phone number verified'), default=False,$/;"	kind:variable	line:61
-preferred_language	../web/apps/user/models.py	/^    preferred_language = models.CharField($/;"	kind:variable	line:45
+on_sale	../web/apps/user/models.py	/^    on_sale = models.BooleanField(_('on sale status'), default=False)$/;"	kind:variable	line:81
+phone_number	../web/apps/user/models.py	/^    phone_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:49
+phone_number_verified	../web/apps/user/models.py	/^    phone_number_verified = models.BooleanField(_('phone number verified'), default=False,$/;"	kind:variable	line:86
+preferred_language	../web/apps/user/models.py	/^    preferred_language = models.CharField($/;"	kind:variable	line:70
 proxy	../web/apps/offers.py	/^        proxy = True$/;"	kind:variable	line:7
-rejected_notifications	../web/apps/user/models.py	/^    rejected_notifications = models.BooleanField($/;"	kind:variable	line:39
+rejected_notifications	../web/apps/user/models.py	/^    rejected_notifications = models.BooleanField($/;"	kind:variable	line:64
 send_confirmation_email	../web/apps/gateway/views.py	/^    def send_confirmation_email(self, real_email, user, password):$/;"	kind:member	line:44
 sitemaps.py	../web/apps/sitemaps.py	1;"	kind:file	line:1
-submitted_notifications	../web/apps/user/models.py	/^    submitted_notifications = models.BooleanField($/;"	kind:variable	line:27
+submitted_notifications	../web/apps/user/models.py	/^    submitted_notifications = models.BooleanField($/;"	kind:variable	line:51
 template_name	../web/apps/gateway/views.py	/^    template_name = 'gateway\/form.html'$/;"	kind:variable	line:19
-timezone	../web/apps/user/models.py	/^    timezone = models.CharField(_("time zone"), max_length=32, default='UTC')$/;"	kind:variable	line:54
-topic_count	../web/apps/user/models.py	/^    topic_count = models.PositiveIntegerField(_("topic count"), default=0)$/;"	kind:variable	line:67
-twitter_username	../web/apps/user/models.py	/^    twitter_username = models.CharField(max_length=255, unique=True)$/;"	kind:variable	line:113
-twitter_username	../web/apps/user/models.py	/^    twitter_username = models.CharField(max_length=255, unique=True)$/;"	kind:variable	line:76
-twitter_username	../web/apps/user/models.py	/^    twitter_username = models.CharField(max_length=255, unique=True)$/;"	kind:variable	line:97
+timezone	../web/apps/user/models.py	/^    timezone = models.CharField(_("time zone"), max_length=32, default='UTC')$/;"	kind:variable	line:79
+topic_count	../web/apps/user/models.py	/^    topic_count = models.PositiveIntegerField(_("topic count"), default=0)$/;"	kind:variable	line:92
 urlpatterns	../web/apps/gateway/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
 urlpatterns	../web/urls.py	/^urlpatterns = [$/;"	kind:variable	line:16
 urls.py	../web/apps/gateway/urls.py	1;"	kind:file	line:1
 urls.py	../web/urls.py	1;"	kind:file	line:1
-user	../web/apps/user/models.py	/^    user = models.OneToOneField(compat.AUTH_USER_MODEL, related_name="profile",$/;"	kind:variable	line:20
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('approved notifications'),$/;"	kind:variable	line:34
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('preferred language'),$/;"	kind:variable	line:46
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('rejected notifications'),$/;"	kind:variable	line:40
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('submitted notifications'),$/;"	kind:variable	line:28
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('approved notifications'),$/;"	kind:variable	line:59
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('preferred language'),$/;"	kind:variable	line:71
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('rejected notifications'),$/;"	kind:variable	line:65
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('submitted notifications'),$/;"	kind:variable	line:52
 views.py	../web/apps/gateway/views.py	1;"	kind:file	line:1
 wsgi.py	../web/wsgi.py	1;"	kind:file	line:1

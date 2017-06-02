@@ -20,9 +20,7 @@ location = lambda x: os.path.join(
 DEBUG = os.environ['DEBUG']
 SQL_DEBUG = DEBUG
 
-sys.path.append(
-    os.path.join(BASE_DIR, 'apps')
-)
+
 
 ALLOWED_HOSTS = [
     'latest.oscarcommerce.com',
@@ -37,7 +35,6 @@ ADMINS = (
     ('lee1234', 'o988184254@gmail.com'),
 )
 
-
 AUTH_USER_MODEL='user.Profile'
 
 MANAGERS = ADMINS
@@ -48,7 +45,7 @@ DATABASES = {
         'NAME': os.environ['DB_NAME'],
         'USER': os.environ['DB_USER'],
         'PASSWORD': os.environ['DB_PASS'],
-        'HOST': os.environ['DB_SERVICE'],
+        'HOST': '192.168.192.28',
         'PORT': os.environ['DB_PORT']
     }
 }
@@ -273,7 +270,11 @@ LOGGING = {
     }
 }
 
-
+# 這裡把 apps加到 sys.path所以 INSTALL_APPS不用再加上apps 
+sys.path.append(
+    os.path.join(BASE_DIR, 'apps')
+)
+# 在apps.py中的name="..."要記得去掉apps
 INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -288,11 +289,11 @@ INSTALLED_APPS = [
     'compressor',
     # Debug toolbar + extensions
     'debug_toolbar',
-    'apps.gateway',     # For allowing dashboard access
+    'gateway',     # For allowing dashboard access
     'widget_tweaks',
     'phonenumber_field',
     'user',
-] + oscar.get_core_apps()
+] + oscar.get_core_apps(['dashboard.catalogue', 'catalogue', 'partner'])
 
 # Add Oscar's custom auth backend so users can sign in using their email
 # address.
@@ -441,3 +442,4 @@ try:
     from settings_local import *
 except ImportError:
     pass
+OSCAR_DEFAULT_CURRENCY = "NTD "
