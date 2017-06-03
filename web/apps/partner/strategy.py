@@ -5,8 +5,11 @@ from oscar.apps.partner.strategy import (
     Structured
 )
 from .prices import CostBasedPrice
-from oscar.apps.partner.prices import Unavailable as PriceUnavailable
+from oscar.core.loading import get_class
 
+Unavailable = get_class('partner.availability', 'Unavailable')
+Available = get_class('partner.availability', 'Available')
+StockRequiredAvailability = get_class('partner.availability', 'StockRequired')
 
 # the selector class allows to change the pricing/availability strategy
 class Selector(OscarSelector):
@@ -31,13 +34,22 @@ class OscarDemoStrategy(
                  # fetch_for_product and fetch_for_parent (product)
                  # it then returns a PurchaseInfo object containing the price and availability
 ):
+    def availability_policy(self, product, stockrecord):
+        if not stockrecord or stockrecord.cost_price is None:
+            return Unavailable()
+        if not product.get_product_class().track_stock:
+            return Available()
+        else:
+            return StockRequiredAvailability(
+                stockrecord.net_stock_level)
+
 
     # here we define the pricing policy based on cost price
     # this will be used for most normal products, see below for parent products
     def pricing_policy(self, product, stockrecord):
         # Check stockrecord has the appropriate data
         if not stockrecord or stockrecord.cost_price is None:
-            return PriceUnavailable()
+            return Unavailable()
         else:
             # we return our custom price object
             return CostBasedPrice(stockrecord.price_currency, stockrecord.cost_price)
@@ -45,12 +57,12 @@ class OscarDemoStrategy(
     def parent_pricing_policy(self, product, children_stock):
         stockrecords = [x[1] for x in children_stock if x[1] is not None]
         if not stockrecords:
-            return PriceUnavailable()
+            return Unavailable()
         else:
             # We take price from first record
             stockrecord = stockrecords[0]
             if stockrecord.cost_price is None:
-                return PriceUnavailable()
+                return Unavailable()
             else:
                 # we return our custom price object
                 return CostBasedPrice(stockrecord.price_currency, stockrecord.cost_price)

@@ -4,160 +4,581 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ADMINS	../web/conf/base.py	/^ADMINS = ($/;"	kind:variable	line:36
-ALLOWED_HOSTS	../web/conf/base.py	/^ALLOWED_HOSTS = [$/;"	kind:variable	line:27
-APPEND_SLASH	../web/conf/base.py	/^APPEND_SLASH = True$/;"	kind:variable	line:305
-AUTHENTICATION_BACKENDS	../web/conf/base.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:299
-AUTH_USER_MODEL	../web/conf/base.py	/^AUTH_USER_MODEL='user.Profile'$/;"	kind:variable	line:41
+0001_initial.py	../web/apps/catalogue/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../web/apps/partner/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_auto_20141007_2032.py	../web/apps/partner/migrations/0002_auto_20141007_2032.py	1;"	kind:file	line:1
+0002_auto_20150217_1221.py	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	1;"	kind:file	line:1
+0003_auto_20150604_1450.py	../web/apps/partner/migrations/0003_auto_20150604_1450.py	1;"	kind:file	line:1
+0003_data_migration_slugs.py	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	1;"	kind:file	line:1
+0004_auto_20150217_1710.py	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	1;"	kind:file	line:1
+0004_auto_20160107_1755.py	../web/apps/partner/migrations/0004_auto_20160107_1755.py	1;"	kind:file	line:1
+0005_auto_20150604_1450.py	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	1;"	kind:file	line:1
+0006_auto_20150807_1725.py	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	1;"	kind:file	line:1
+0007_auto_20151207_1440.py	../web/apps/catalogue/migrations/0007_auto_20151207_1440.py	1;"	kind:file	line:1
+0008_auto_20160304_1652.py	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	1;"	kind:file	line:1
+0009_slugfield_noop.py	../web/apps/catalogue/migrations/0009_slugfield_noop.py	1;"	kind:file	line:1
+0010_auto_20170420_0439.py	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	1;"	kind:file	line:1
+ADMINS	../web/conf/base.py	/^ADMINS = ($/;"	kind:variable	line:34
+ALLOWED_HOSTS	../web/conf/base.py	/^ALLOWED_HOSTS = [$/;"	kind:variable	line:25
+APPEND_SLASH	../web/conf/base.py	/^APPEND_SLASH = True$/;"	kind:variable	line:306
+AUTHENTICATION_BACKENDS	../web/conf/base.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:300
+AUTH_USER_MODEL	../web/conf/base.py	/^AUTH_USER_MODEL='user.Profile'$/;"	kind:variable	line:38
 BASE_DIR	../web/conf/base.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) $/;"	kind:variable	line:16
-CACHES	../web/conf/base.py	/^CACHES = {$/;"	kind:variable	line:56
+CACHES	../web/conf/base.py	/^CACHES = {$/;"	kind:variable	line:53
+CatalogueConfig	../web/apps/catalogue/config.py	/^class CatalogueConfig(config.CatalogueConfig):$/;"	kind:class	line:4
+CatalogueDashboardConfig	../web/apps/dashboard/catalogue/config.py	/^class CatalogueDashboardConfig(config.CatalogueDashboardConfig):$/;"	kind:class	line:4
+Category	../web/apps/dashboard/catalogue/views.py	/^Category = get_model('catalogue', 'Category')$/;"	kind:variable	line:43
 Category	../web/apps/sitemaps.py	/^Category = get_model('catalogue', 'Category')$/;"	kind:variable	line:9
+CategoryCreateView	../web/apps/dashboard/catalogue/views.py	/^class CategoryCreateView(CategoryListMixin, generic.CreateView):$/;"	kind:class	line:567
+CategoryDeleteView	../web/apps/dashboard/catalogue/views.py	/^class CategoryDeleteView(CategoryListMixin, generic.DeleteView):$/;"	kind:class	line:604
+CategoryDetailListView	../web/apps/dashboard/catalogue/views.py	/^class CategoryDetailListView(SingleTableMixin, generic.DetailView):$/;"	kind:class	line:538
+CategoryListMixin	../web/apps/dashboard/catalogue/views.py	/^class CategoryListMixin(object):$/;"	kind:class	line:556
+CategoryListView	../web/apps/dashboard/catalogue/views.py	/^class CategoryListView(SingleTableView):$/;"	kind:class	line:524
 CategorySitemap	../web/apps/sitemaps.py	/^class CategorySitemap(I18nSitemap):$/;"	kind:class	line:54
+CategoryUpdateView	../web/apps/dashboard/catalogue/views.py	/^class CategoryUpdateView(CategoryListMixin, generic.UpdateView):$/;"	kind:class	line:589
 ChangesOwnerName	../web/apps/offers.py	/^class ChangesOwnerName(models.Benefit):$/;"	kind:class	line:4
-DATABASES	../web/conf/base.py	/^DATABASES = {$/;"	kind:variable	line:45
+CostBasedPrice	../web/apps/partner/prices.py	/^class CostBasedPrice(FixedPrice):$/;"	kind:class	line:4
+DATABASES	../web/conf/base.py	/^DATABASES = {$/;"	kind:variable	line:42
 DEBUG	../web/conf/base.py	/^DEBUG = os.environ['DEBUG']$/;"	kind:variable	line:20
-DISPLAY_VERSION	../web/conf/base.py	/^DISPLAY_VERSION = False$/;"	kind:variable	line:355
-EMAIL_BACKEND	../web/conf/base.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:422
-EMAIL_HOST	../web/conf/base.py	/^EMAIL_HOST = 'mail.gandi.net'$/;"	kind:variable	line:434
-EMAIL_HOST_PASSWORD	../web/conf/base.py	/^EMAIL_HOST_PASSWORD = '0988][poiuy'$/;"	kind:variable	line:437
-EMAIL_HOST_USER	../web/conf/base.py	/^EMAIL_HOST_USER = 'service@safecloud.com.tw'$/;"	kind:variable	line:435
-EMAIL_PORT	../web/conf/base.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:425
-EMAIL_SUBJECT_PREFIX	../web/conf/base.py	/^EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '$/;"	kind:variable	line:423
-EMAIL_USE_TLS	../web/conf/base.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:426
+DISPLAY_VERSION	../web/conf/base.py	/^DISPLAY_VERSION = False$/;"	kind:variable	line:356
+EMAIL_BACKEND	../web/conf/base.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:423
+EMAIL_HOST	../web/conf/base.py	/^EMAIL_HOST = 'mail.gandi.net'$/;"	kind:variable	line:435
+EMAIL_HOST_PASSWORD	../web/conf/base.py	/^EMAIL_HOST_PASSWORD = '0988][poiuy'$/;"	kind:variable	line:438
+EMAIL_HOST_USER	../web/conf/base.py	/^EMAIL_HOST_USER = 'service@safecloud.com.tw'$/;"	kind:variable	line:436
+EMAIL_PORT	../web/conf/base.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:426
+EMAIL_SUBJECT_PREFIX	../web/conf/base.py	/^EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '$/;"	kind:variable	line:424
+EMAIL_USE_TLS	../web/conf/base.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:427
+FIELD_FACTORIES	../web/apps/dashboard/catalogue/forms.py	/^    FIELD_FACTORIES = {$/;"	kind:variable	line:124
 GatewayForm	../web/apps/gateway/forms.py	/^class GatewayForm(forms.Form):$/;"	kind:class	line:7
 GatewayView	../web/apps/gateway/views.py	/^class GatewayView(generic.FormView):$/;"	kind:class	line:18
-HAYSTACK_CONNECTIONS	../web/conf/base.py	/^HAYSTACK_CONNECTIONS = {$/;"	kind:variable	line:317
+HAYSTACK_CONNECTIONS	../web/conf/base.py	/^HAYSTACK_CONNECTIONS = {$/;"	kind:variable	line:318
 I18nSitemap	../web/apps/sitemaps.py	/^class I18nSitemap(Sitemap):$/;"	kind:class	line:20
-INSTALLED_APPS	../web/conf/base.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:277
-INTERNAL_IPS	../web/conf/base.py	/^INTERNAL_IPS = ['127.0.0.1', '::1']$/;"	kind:variable	line:336
-LANGUAGES	../web/conf/base.py	/^LANGUAGES = ($/;"	kind:variable	line:80
-LANGUAGE_CODE	../web/conf/base.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:75
-LOGGING	../web/conf/base.py	/^LOGGING = {$/;"	kind:variable	line:200
-LOGIN_REDIRECT_URL	../web/conf/base.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:304
-MANAGERS	../web/conf/base.py	/^MANAGERS = ADMINS$/;"	kind:variable	line:43
-MEDIA_ROOT	../web/conf/base.py	/^MEDIA_ROOT = location("public\/media")$/;"	kind:variable	line:116
-MEDIA_URL	../web/conf/base.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:121
-MESSAGE_TAGS	../web/conf/base.py	/^MESSAGE_TAGS = {$/;"	kind:variable	line:312
-MIDDLEWARE	../web/conf/base.py	/^MIDDLEWARE = [$/;"	kind:variable	line:170
+INSTALLED_APPS	../web/conf/base.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:278
+INTERNAL_IPS	../web/conf/base.py	/^INTERNAL_IPS = ['127.0.0.1', '::1']$/;"	kind:variable	line:337
+LANGUAGES	../web/conf/base.py	/^LANGUAGES = ($/;"	kind:variable	line:77
+LANGUAGE_CODE	../web/conf/base.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:72
+LOGGING	../web/conf/base.py	/^LOGGING = {$/;"	kind:variable	line:197
+LOGIN_REDIRECT_URL	../web/conf/base.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:305
+MANAGERS	../web/conf/base.py	/^MANAGERS = ADMINS$/;"	kind:variable	line:40
+MEDIA_ROOT	../web/conf/base.py	/^MEDIA_ROOT = location("public\/media")$/;"	kind:variable	line:113
+MEDIA_URL	../web/conf/base.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:118
+MESSAGE_TAGS	../web/conf/base.py	/^MESSAGE_TAGS = {$/;"	kind:variable	line:313
+MIDDLEWARE	../web/conf/base.py	/^MIDDLEWARE = [$/;"	kind:variable	line:167
+Meta	../web/apps/dashboard/catalogue/forms.py	/^    class Meta:$/;"	kind:class	line:139
+Meta	../web/apps/dashboard/catalogue/forms.py	/^    class Meta:$/;"	kind:class	line:45
 Meta	../web/apps/offers.py	/^    class Meta:$/;"	kind:class	line:6
-MyUserManager	../web/apps/user/models.py	/^class MyUserManager(UserManager):$/;"	kind:class	line:17
-OSCAR_ALLOW_ANON_CHECKOUT	../web/conf/base.py	/^OSCAR_ALLOW_ANON_CHECKOUT = True$/;"	kind:variable	line:350
-OSCAR_INITIAL_LINE_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_LINE_STATUS = 'Pending'$/;"	kind:variable	line:365
-OSCAR_INITIAL_ORDER_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_ORDER_STATUS = 'Pending'$/;"	kind:variable	line:364
-OSCAR_ORDER_STATUS_CASCADE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_CASCADE = {$/;"	kind:variable	line:377
-OSCAR_ORDER_STATUS_PIPELINE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_PIPELINE = {$/;"	kind:variable	line:368
-OSCAR_RECENTLY_VIEWED_PRODUCTS	../web/conf/base.py	/^OSCAR_RECENTLY_VIEWED_PRODUCTS = 20$/;"	kind:variable	line:349
-OSCAR_SHOP_TAGLINE	../web/conf/base.py	/^OSCAR_SHOP_TAGLINE = 'Sandbox'$/;"	kind:variable	line:347
-Partner	../web/apps/user/models.py	/^Partner = get_model('partner', 'Partner')$/;"	kind:variable	line:15
+Migration	../web/apps/catalogue/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:11
+Migration	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:35
+Migration	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../web/apps/catalogue/migrations/0007_auto_20151207_1440.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../web/apps/catalogue/migrations/0009_slugfield_noop.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../web/apps/partner/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Migration	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+MyUserManager	../web/apps/user/models.py	/^class MyUserManager(UserManager):$/;"	kind:class	line:20
+ORMCategory	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^ORMCategory = get_model('catalogue', 'Category')$/;"	kind:variable	line:17
+OSCAR_ALLOW_ANON_CHECKOUT	../web/conf/base.py	/^OSCAR_ALLOW_ANON_CHECKOUT = True$/;"	kind:variable	line:351
+OSCAR_DEFAULT_CURRENCY	../web/conf/base.py	/^OSCAR_DEFAULT_CURRENCY = "NTD "$/;"	kind:variable	line:445
+OSCAR_INITIAL_LINE_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_LINE_STATUS = 'Pending'$/;"	kind:variable	line:366
+OSCAR_INITIAL_ORDER_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_ORDER_STATUS = 'Pending'$/;"	kind:variable	line:365
+OSCAR_ORDER_STATUS_CASCADE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_CASCADE = {$/;"	kind:variable	line:378
+OSCAR_ORDER_STATUS_PIPELINE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_PIPELINE = {$/;"	kind:variable	line:369
+OSCAR_RECENTLY_VIEWED_PRODUCTS	../web/conf/base.py	/^OSCAR_RECENTLY_VIEWED_PRODUCTS = 20$/;"	kind:variable	line:350
+OSCAR_SHOP_TAGLINE	../web/conf/base.py	/^OSCAR_SHOP_TAGLINE = 'Sandbox'$/;"	kind:variable	line:348
+OscarDemoStrategy	../web/apps/partner/strategy.py	/^                 # fetch_for_product and fetch_for_parent (product)$/;"	kind:class	line:31
+OscarProductForm	../web/apps/dashboard/catalogue/forms.py	/^class OscarProductForm(forms.ModelForm):$/;"	kind:class	line:123
+Partner	../web/apps/dashboard/catalogue/views.py	/^Partner = get_model('partner', 'Partner')$/;"	kind:variable	line:49
+Partner	../web/apps/user/models.py	/^Partner = get_model('partner', 'Partner')$/;"	kind:variable	line:18
+PartnerConfig	../web/apps/partner/config.py	/^class PartnerConfig(config.PartnerConfig):$/;"	kind:class	line:4
+Product	../web/apps/catalogue/models.py	/^class Product(AbstractProduct):$/;"	kind:class	line:9
+Product	../web/apps/dashboard/catalogue/forms.py	/^Product = get_model('catalogue', 'Product')$/;"	kind:variable	line:7
+Product	../web/apps/dashboard/catalogue/views.py	/^Product = get_model('catalogue', 'Product')$/;"	kind:variable	line:42
 Product	../web/apps/sitemaps.py	/^Product = get_model('catalogue', 'Product')$/;"	kind:variable	line:8
+ProductCategory	../web/apps/dashboard/catalogue/views.py	/^ProductCategory = get_model('catalogue', 'ProductCategory')$/;"	kind:variable	line:45
+ProductClass	../web/apps/dashboard/catalogue/views.py	/^ProductClass = get_model('catalogue', 'ProductClass')$/;"	kind:variable	line:46
+ProductClassCreateUpdateView	../web/apps/dashboard/catalogue/views.py	/^class ProductClassCreateUpdateView(generic.UpdateView):$/;"	kind:class	line:629
+ProductClassCreateView	../web/apps/dashboard/catalogue/views.py	/^class ProductClassCreateView(ProductClassCreateUpdateView):$/;"	kind:class	line:686
+ProductClassDeleteView	../web/apps/dashboard/catalogue/views.py	/^class ProductClassDeleteView(generic.DeleteView):$/;"	kind:class	line:729
+ProductClassListView	../web/apps/dashboard/catalogue/views.py	/^class ProductClassListView(generic.ListView):$/;"	kind:class	line:717
+ProductClassUpdateView	../web/apps/dashboard/catalogue/views.py	/^class ProductClassUpdateView(ProductClassCreateUpdateView):$/;"	kind:class	line:701
+ProductCreateRedirectView	../web/apps/dashboard/catalogue/views.py	/^class ProductCreateRedirectView(generic.RedirectView):$/;"	kind:class	line:149
+ProductCreateUpdateView	../web/apps/dashboard/catalogue/views.py	/^class ProductCreateUpdateView(generic.UpdateView):$/;"	kind:class	line:172
+ProductDeleteView	../web/apps/dashboard/catalogue/views.py	/^class ProductDeleteView(generic.DeleteView):$/;"	kind:class	line:423
+ProductForm	../web/apps/dashboard/catalogue/forms.py	/^class ProductForm(OscarProductForm):$/;"	kind:class	line:243
+ProductImage	../web/apps/dashboard/catalogue/views.py	/^ProductImage = get_model('catalogue', 'ProductImage')$/;"	kind:variable	line:44
+ProductListView	../web/apps/dashboard/catalogue/views.py	/^class ProductListView(SingleTableView):$/;"	kind:class	line:65
+ProductLookupView	../web/apps/dashboard/catalogue/views.py	/^class ProductLookupView(ObjectLookupView):$/;"	kind:class	line:618
+ProductSearchForm	../web/apps/dashboard/catalogue/forms.py	/^class ProductSearchForm(forms.Form):$/;"	kind:class	line:13
 ProductSitemap	../web/apps/sitemaps.py	/^class ProductSitemap(I18nSitemap):$/;"	kind:class	line:48
-Profile	../web/apps/user/models.py	/^class Profile(AbstractUser):$/;"	kind:class	line:45
-RAVEN_CONFIG	../web/conf/base.py	/^    RAVEN_CONFIG = {'dsn': env('SENTRY_DSN', default=None)}$/;"	kind:variable	line:396
-ROOT_URLCONF	../web/conf/base.py	/^ROOT_URLCONF = 'urls'$/;"	kind:variable	line:192
+Profile	../web/apps/user/models.py	/^class Profile(AbstractUser):$/;"	kind:class	line:48
+RAVEN_CONFIG	../web/conf/base.py	/^    RAVEN_CONFIG = {'dsn': env('SENTRY_DSN', default=None)}$/;"	kind:variable	line:397
+ROOT_URLCONF	../web/conf/base.py	/^ROOT_URLCONF = 'urls'$/;"	kind:variable	line:189
 SECRET_KEY	../web/conf/base.py	/^SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:10
-SESSION_SERIALIZER	../web/conf/base.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'$/;"	kind:variable	line:420
-SITE_ID	../web/conf/base.py	/^SITE_ID = 1$/;"	kind:variable	line:104
+SESSION_SERIALIZER	../web/conf/base.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'$/;"	kind:variable	line:421
+SITE_ID	../web/conf/base.py	/^SITE_ID = 1$/;"	kind:variable	line:101
 SQL_DEBUG	../web/conf/base.py	/^SQL_DEBUG = DEBUG$/;"	kind:variable	line:21
-STATICFILES_DIRS	../web/conf/base.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:126
-STATICFILES_FINDERS	../web/conf/base.py	/^STATICFILES_FINDERS = ($/;"	kind:variable	line:129
-STATICFILES_STORAGE	../web/conf/base.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:125
-STATIC_ROOT	../web/conf/base.py	/^STATIC_ROOT = location('public\/static')$/;"	kind:variable	line:124
-STATIC_URL	../web/conf/base.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:123
+STATICFILES_DIRS	../web/conf/base.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:123
+STATICFILES_FINDERS	../web/conf/base.py	/^STATICFILES_FINDERS = ($/;"	kind:variable	line:126
+STATICFILES_STORAGE	../web/conf/base.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:122
+STATIC_ROOT	../web/conf/base.py	/^STATIC_ROOT = location('public\/static')$/;"	kind:variable	line:121
+STATIC_URL	../web/conf/base.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
+Selector	../web/apps/partner/strategy.py	/^class Selector(OscarSelector):$/;"	kind:class	line:12
 StaticSitemap	../web/apps/sitemaps.py	/^class StaticSitemap(I18nSitemap):$/;"	kind:class	line:39
-TEMPLATES	../web/conf/base.py	/^TEMPLATES = [$/;"	kind:variable	line:136
-TEST_RUNNER	../web/conf/base.py	/^TEST_RUNNER = 'django.test.runner.DiscoverRunner'$/;"	kind:variable	line:71
-THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:408
-THUMBNAIL_KEY_PREFIX	../web/conf/base.py	/^THUMBNAIL_KEY_PREFIX = 'oscar-sandbox'$/;"	kind:variable	line:409
-THUMBNAIL_KVSTORE	../web/conf/base.py	/^THUMBNAIL_KVSTORE = env($/;"	kind:variable	line:410
-THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)$/;"	kind:variable	line:413
-TIME_ZONE	../web/conf/base.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:69
-USE_I18N	../web/conf/base.py	/^USE_I18N = True$/;"	kind:variable	line:108
-USE_L10N	../web/conf/base.py	/^USE_L10N = True$/;"	kind:variable	line:112
-USE_LESS	../web/conf/base.py	/^USE_LESS = False$/;"	kind:variable	line:389
-USE_TZ	../web/conf/base.py	/^USE_TZ = True$/;"	kind:variable	line:68
+StockAlert	../web/apps/dashboard/catalogue/views.py	/^StockAlert = get_model('partner', 'StockAlert')$/;"	kind:variable	line:48
+StockAlertListView	../web/apps/dashboard/catalogue/views.py	/^class StockAlertListView(generic.ListView):$/;"	kind:class	line:499
+StockRecord	../web/apps/dashboard/catalogue/forms.py	/^StockRecord = get_model('partner', 'StockRecord')$/;"	kind:variable	line:8
+StockRecord	../web/apps/dashboard/catalogue/views.py	/^StockRecord = get_model('partner', 'StockRecord')$/;"	kind:variable	line:47
+StockRecordForm	../web/apps/dashboard/catalogue/forms.py	/^class StockRecordForm(forms.ModelForm):$/;"	kind:class	line:23
+StockRecordFormSet	../web/apps/dashboard/catalogue/formsets.py	/^class StockRecordFormSet(OscarStockRecordFormSet):$/;"	kind:class	line:5
+TEMPLATES	../web/conf/base.py	/^TEMPLATES = [$/;"	kind:variable	line:133
+TEST_RUNNER	../web/conf/base.py	/^TEST_RUNNER = 'django.test.runner.DiscoverRunner'$/;"	kind:variable	line:68
+THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:409
+THUMBNAIL_KEY_PREFIX	../web/conf/base.py	/^THUMBNAIL_KEY_PREFIX = 'oscar-sandbox'$/;"	kind:variable	line:410
+THUMBNAIL_KVSTORE	../web/conf/base.py	/^THUMBNAIL_KVSTORE = env($/;"	kind:variable	line:411
+THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)$/;"	kind:variable	line:414
+TIME_ZONE	../web/conf/base.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:66
+USE_I18N	../web/conf/base.py	/^USE_I18N = True$/;"	kind:variable	line:105
+USE_L10N	../web/conf/base.py	/^USE_L10N = True$/;"	kind:variable	line:109
+USE_LESS	../web/conf/base.py	/^USE_LESS = False$/;"	kind:variable	line:390
+USE_TZ	../web/conf/base.py	/^USE_TZ = True$/;"	kind:variable	line:65
 UserConfig	../web/apps/user/apps.py	/^class UserConfig(AppConfig):$/;"	kind:class	line:4
+__init__	../web/apps/dashboard/catalogue/forms.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:248
+__init__	../web/apps/dashboard/catalogue/forms.py	/^    def __init__(self, product_class, data=None, parent=None, *args, **kwargs):$/;"	kind:member	line:147
+__init__	../web/apps/dashboard/catalogue/forms.py	/^    def __init__(self, product_class, user, *args, **kwargs):$/;"	kind:member	line:25
+__init__	../web/apps/dashboard/catalogue/views.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:198
+__init__	../web/apps/partner/prices.py	/^    def __init__(self, currency, cost_price):$/;"	kind:member	line:6
 __init__	../web/apps/sitemaps.py	/^    def __init__(self, language):$/;"	kind:member	line:25
 __init__.py	../web/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/catalogue/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/catalogue/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/dashboard/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/dashboard/catalogue/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/gateway/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/partner/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/partner/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/user/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/conf/__init__.py	1;"	kind:file	line:1
+_attr_boolean_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_boolean_field(attribute):$/;"	kind:function	line:70
+_attr_date_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_date_field(attribute):$/;"	kind:function	line:80
+_attr_entity_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_entity_field(attribute):$/;"	kind:function	line:100
+_attr_file_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_file_field(attribute):$/;"	kind:function	line:113
+_attr_float_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_float_field(attribute):$/;"	kind:function	line:75
+_attr_image_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_image_field(attribute):$/;"	kind:function	line:118
+_attr_integer_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_integer_field(attribute):$/;"	kind:function	line:65
+_attr_multi_option_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_multi_option_field(attribute):$/;"	kind:function	line:93
+_attr_numeric_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_numeric_field(attribute):$/;"	kind:function	line:108
+_attr_option_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_option_field(attribute):$/;"	kind:function	line:86
+_attr_text_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_text_field(attribute):$/;"	kind:function	line:54
+_attr_textarea_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_textarea_field(attribute):$/;"	kind:function	line:59
+_construct_form	../web/apps/dashboard/catalogue/formsets.py	/^    def _construct_form(self, i, **kwargs):$/;"	kind:member	line:7
+_post_clean	../web/apps/dashboard/catalogue/forms.py	/^    def _post_clean(self):$/;"	kind:member	line:225
+add_ancestor_slugs	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^def add_ancestor_slugs(apps, schema_editor):$/;"	kind:function	line:27
+add_attribute_fields	../web/apps/dashboard/catalogue/forms.py	/^    def add_attribute_fields(self, product_class, is_parent=False):$/;"	kind:member	line:197
+admin.py	../web/apps/catalogue/admin.py	1;"	kind:file	line:1
+admin.py	../web/apps/partner/admin.py	1;"	kind:file	line:1
 app_label	../web/apps/offers.py	/^        app_label = 'sandbox'$/;"	kind:variable	line:8
 application	../web/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:7
 apply	../web/apps/offers.py	/^    def apply(self, basket, condition, offer=None):$/;"	kind:member	line:10
 apply_deferred	../web/apps/offers.py	/^    def apply_deferred(self, basket, order, application):$/;"	kind:member	line:15
-approved_notifications	../web/apps/user/models.py	/^    approved_notifications = models.BooleanField($/;"	kind:variable	line:58
+apply_search	../web/apps/dashboard/catalogue/views.py	/^    def apply_search(self, queryset):$/;"	kind:member	line:115
+approved_notifications	../web/apps/user/models.py	/^    approved_notifications = models.BooleanField($/;"	kind:variable	line:61
 apps.py	../web/apps/user/apps.py	1;"	kind:file	line:1
 base.py	../web/conf/base.py	1;"	kind:file	line:1
 base_sitemaps	../web/apps/sitemaps.py	/^base_sitemaps = {}$/;"	kind:variable	line:67
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:100
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:118
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:143
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:158
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:176
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:194
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:210
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:29
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:42
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:63
+bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:78
+bases	../web/apps/partner/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:33
+bases	../web/apps/partner/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:57
+bases	../web/apps/partner/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:74
+bases	../web/apps/partner/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:98
+category_formset	../web/apps/dashboard/catalogue/views.py	/^    category_formset = ProductCategoryFormSet$/;"	kind:variable	line:193
+check_objects_or_redirect	../web/apps/dashboard/catalogue/views.py	/^    def check_objects_or_redirect(self):$/;"	kind:member	line:211
+clean	../web/apps/dashboard/catalogue/forms.py	/^    def clean(self):$/;"	kind:member	line:17
+clean	../web/apps/dashboard/catalogue/views.py	/^    def clean(self, form, formsets):$/;"	kind:member	line:331
 clean_email	../web/apps/gateway/forms.py	/^    def clean_email(self):$/;"	kind:member	line:10
-comment_count	../web/apps/user/models.py	/^    comment_count = models.PositiveIntegerField(_("comment count"), default=0)$/;"	kind:variable	line:93
+comment_count	../web/apps/user/models.py	/^    comment_count = models.PositiveIntegerField(_("comment count"), default=0)$/;"	kind:variable	line:96
+config.py	../web/apps/catalogue/config.py	1;"	kind:file	line:1
+config.py	../web/apps/dashboard/catalogue/config.py	1;"	kind:file	line:1
+config.py	../web/apps/partner/config.py	1;"	kind:file	line:1
+context_object_name	../web/apps/dashboard/catalogue/views.py	/^    context_object_name = 'alerts'$/;"	kind:variable	line:502
+context_object_name	../web/apps/dashboard/catalogue/views.py	/^    context_object_name = 'category'$/;"	kind:variable	line:541
+context_object_name	../web/apps/dashboard/catalogue/views.py	/^    context_object_name = 'classes'$/;"	kind:variable	line:719
+context_object_name	../web/apps/dashboard/catalogue/views.py	/^    context_object_name = 'product'$/;"	kind:variable	line:190
+context_object_name	../web/apps/dashboard/catalogue/views.py	/^    context_object_name = 'product'$/;"	kind:variable	line:431
+context_table_name	../web/apps/dashboard/catalogue/views.py	/^    context_table_name = 'categories'$/;"	kind:variable	line:527
+context_table_name	../web/apps/dashboard/catalogue/views.py	/^    context_table_name = 'categories'$/;"	kind:variable	line:543
+context_table_name	../web/apps/dashboard/catalogue/views.py	/^    context_table_name = 'products'$/;"	kind:variable	line:76
+cost_price	../web/apps/catalogue/models.py	/^    def cost_price(self):$/;"	kind:member	line:17
+cost_price	../web/apps/dashboard/catalogue/forms.py	/^    cost_price = forms.FloatField(required=True)$/;"	kind:variable	line:245
 create_dashboard_user	../web/apps/gateway/views.py	/^    def create_dashboard_user(self, username, email, password):$/;"	kind:member	line:38
-create_user	../web/apps/user/models.py	/^    def create_user(self, email, password=None, **extra_fields):$/;"	kind:member	line:19
-default	../web/apps/user/models.py	/^        default=''$/;"	kind:variable	line:74
-default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:53
-default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:60
-default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:66
-default	../web/conf/base.py	/^    default='sorl.thumbnail.kvstores.cached_db_kvstore.KVStore')$/;"	kind:variable	line:412
+create_user	../web/apps/user/models.py	/^    def create_user(self, email, password=None, **extra_fields):$/;"	kind:member	line:22
+creating	../web/apps/dashboard/catalogue/views.py	/^    creating = False$/;"	kind:variable	line:703
+creating	../web/apps/dashboard/catalogue/views.py	/^    creating = True$/;"	kind:variable	line:688
+default	../web/apps/user/models.py	/^        default=''$/;"	kind:variable	line:77
+default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:56
+default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:63
+default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:69
+default	../web/conf/base.py	/^    default='sorl.thumbnail.kvstores.cached_db_kvstore.KVStore')$/;"	kind:variable	line:413
+default_app_config	../web/apps/catalogue/__init__.py	/^default_app_config = 'apps.catalogue.config.CatalogueConfig'$/;"	kind:variable	line:1
+default_app_config	../web/apps/dashboard/catalogue/__init__.py	/^default_app_config = 'apps.dashboard.catalogue.config.CatalogueDashboardConfig'$/;"	kind:variable	line:1
+default_app_config	../web/apps/partner/__init__.py	/^default_app_config = 'apps.partner.config.PartnerConfig'$/;"	kind:variable	line:1
+delete	../web/apps/dashboard/catalogue/views.py	/^    def delete(self, request, *args, **kwargs):$/;"	kind:member	line:447
+delete_non_child_fields	../web/apps/dashboard/catalogue/forms.py	/^    def delete_non_child_fields(self):$/;"	kind:member	line:216
+dependencies	../web/apps/catalogue/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+dependencies	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^    dependencies = [$/;"	kind:variable	line:37
+dependencies	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../web/apps/catalogue/migrations/0007_auto_20151207_1440.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../web/apps/catalogue/migrations/0009_slugfield_noop.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../web/apps/partner/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^    dependencies = [$/;"	kind:variable	line:9
 description	../web/apps/offers.py	/^    def description(self):$/;"	kind:member	line:22
+dispatch	../web/apps/dashboard/catalogue/views.py	/^    def dispatch(self, request, *args, **kwargs):$/;"	kind:member	line:206
 document_root	../web/urls.py	/^                          document_root=settings.MEDIA_ROOT)$/;"	kind:variable	line:45
 email	../web/apps/gateway/forms.py	/^    email = forms.EmailField()$/;"	kind:variable	line:8
 env	../web/conf/base.py	/^env = environ.Env()$/;"	kind:variable	line:7
-fax_number	../web/apps/user/models.py	/^    fax_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:50
+fax_number	../web/apps/user/models.py	/^    fax_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:53
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ForeignKey(null=True, verbose_name='Parent product', related_name='children', help_text="Only choose a parent product if you're creating a child product.  For example if this is a size 4 of a particular t-shirt.  Leave blank if this is a stand-alone product (i.e. there is only one version of this product).", to='catalogue.Product', blank=True, on_delete=models.CASCADE),$/;"	kind:variable	line:249
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ForeignKey(null=True, verbose_name='Product type', related_name='attributes', to='catalogue.ProductClass', blank=True, on_delete=models.CASCADE),$/;"	kind:variable	line:231
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ForeignKey(verbose_name='Group', related_name='options', to='catalogue.AttributeOptionGroup', on_delete=models.CASCADE),$/;"	kind:variable	line:273
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ForeignKey(verbose_name='Product type', on_delete=django.db.models.deletion.PROTECT, related_name='products', help_text='Choose what type of product this is', to='catalogue.ProductClass', null=True),$/;"	kind:variable	line:255
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ManyToManyField(through='catalogue.ProductCategory', verbose_name='Categories', to='catalogue.Category'),$/;"	kind:variable	line:243
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ManyToManyField(verbose_name='Attributes', help_text='A product attribute is something that this product may have, such as a size, as specified by its class', to='catalogue.ProductAttribute', through='catalogue.ProductAttributeValue'),$/;"	kind:variable	line:237
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ManyToManyField(verbose_name='Product options', help_text="Options are values that can be associated with a item when it is added to a customer's basket.  This could be something like a personalised message to be printed on a T-shirt.", to='catalogue.Option', blank=True),$/;"	kind:variable	line:261
+field	../web/apps/catalogue/migrations/0001_initial.py	/^            field=models.ManyToManyField(verbose_name='Recommended products', help_text='These are products that are recommended to accompany the main product.', to='catalogue.Product', through='catalogue.ProductRecommendation', blank=True),$/;"	kind:variable	line:267
+field	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^            field=models.SlugField(max_length=255, verbose_name='Slug'),$/;"	kind:variable	line:17
+field	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	/^            field=models.ForeignKey(related_name='products', on_delete=django.db.models.deletion.PROTECT, blank=True, to='catalogue.ProductClass', help_text='Choose what type of product this is', null=True, verbose_name='Product type'),$/;"	kind:variable	line:18
+field	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^            field=models.SlugField(max_length=128, verbose_name='Code', validators=[django.core.validators.RegexValidator(regex=r'^[a-zA-Z_][0-9a-zA-Z_]*$', message="Code can only contain the letters a-z, A-Z, digits, and underscores, and can't start with a digit"), oscar.core.validators.non_python_keyword]),$/;"	kind:variable	line:19
+field	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	/^            field=models.SlugField(max_length=128, verbose_name='Code', validators=[django.core.validators.RegexValidator(regex=r'^[a-zA-Z_][0-9a-zA-Z_]*$', message="Code can only contain the letters a-z, A-Z, digits, and underscores, and can't start with a digit."), oscar.core.validators.non_python_keyword]),$/;"	kind:variable	line:19
+field	../web/apps/catalogue/migrations/0009_slugfield_noop.py	/^            field=oscar.models.fields.slugfield.SlugField(max_length=255, verbose_name='Slug'),$/;"	kind:variable	line:19
+field	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            field=models.CharField(choices=[('text', 'Text'), ('integer', 'Integer'), ('boolean', 'True \/ False'), ('float', 'Float'), ('richtext', 'Rich Text'), ('date', 'Date'), ('option', 'Option'), ('multi_option', 'Multi Option'), ('entity', 'Entity'), ('file', 'File'), ('image', 'Image')], default='text', max_length=20, verbose_name='Type'),$/;"	kind:variable	line:29
+field	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            field=models.ForeignKey(blank=True, help_text='Select an option group if using type "Option" or "Multi Option"', null=True, on_delete=django.db.models.deletion.CASCADE, to='catalogue.AttributeOptionGroup', verbose_name='Option Group'),$/;"	kind:variable	line:24
+field	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            field=models.ManyToManyField(blank=True, related_name='multi_valued_attribute_values', to='catalogue.AttributeOption', verbose_name='Value multi option'),$/;"	kind:variable	line:19
+field	../web/apps/partner/migrations/0001_initial.py	/^            field=models.ForeignKey(verbose_name='Stock Record', related_name='alerts', to='partner.StockRecord', on_delete=models.CASCADE),$/;"	kind:variable	line:107
+field	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^            field=models.CharField(default=oscar.core.utils.get_default_currency, max_length=12, verbose_name='Currency'),$/;"	kind:variable	line:18
+field	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^            field=models.ManyToManyField(related_name='partners', verbose_name='Users', to=settings.AUTH_USER_MODEL, blank=True),$/;"	kind:variable	line:18
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:104
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:122
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:147
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:162
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:180
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:198
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:20
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:33
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:46
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:67
+fields	../web/apps/catalogue/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:82
+fields	../web/apps/dashboard/catalogue/forms.py	/^        fields = [$/;"	kind:variable	line:141
+fields	../web/apps/dashboard/catalogue/forms.py	/^        fields = [$/;"	kind:variable	line:47
+fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:21
+fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:37
+fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:61
+fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:78
+filter_products	../web/apps/dashboard/catalogue/views.py	/^def filter_products(queryset, user):$/;"	kind:function	line:52
+filter_queryset	../web/apps/dashboard/catalogue/views.py	/^    def filter_queryset(self, queryset):$/;"	kind:member	line:100
+form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = CategoryForm$/;"	kind:variable	line:570
+form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = CategoryForm$/;"	kind:variable	line:592
+form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = ProductClassForm$/;"	kind:variable	line:633
+form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = ProductClassForm$/;"	kind:variable	line:732
+form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = ProductForm$/;"	kind:variable	line:192
+form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = ProductSearchForm$/;"	kind:variable	line:73
 form_class	../web/apps/gateway/views.py	/^    form_class = forms.GatewayForm$/;"	kind:variable	line:20
 form_valid	../web/apps/gateway/views.py	/^    def form_valid(self, form):$/;"	kind:member	line:22
+forms.py	../web/apps/dashboard/catalogue/forms.py	1;"	kind:file	line:1
 forms.py	../web/apps/gateway/forms.py	1;"	kind:file	line:1
+forms_invalid	../web/apps/dashboard/catalogue/views.py	/^    def forms_invalid(self, form, attributes_formset):$/;"	kind:member	line:662
+forms_invalid	../web/apps/dashboard/catalogue/views.py	/^    def forms_invalid(self, form, formsets):$/;"	kind:member	line:371
+forms_valid	../web/apps/dashboard/catalogue/views.py	/^    def forms_valid(self, form, attributes_formset):$/;"	kind:member	line:656
+forms_valid	../web/apps/dashboard/catalogue/views.py	/^    def forms_valid(self, form, formsets):$/;"	kind:member	line:340
+formsets.py	../web/apps/dashboard/catalogue/formsets.py	1;"	kind:file	line:1
+get_attribute_field	../web/apps/dashboard/catalogue/forms.py	/^    def get_attribute_field(self, attribute):$/;"	kind:member	line:210
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:262
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:439
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:505
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:572
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:594
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:78
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:532
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:548
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:608
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:673
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:722
+get_context_data	../web/apps/dashboard/catalogue/views.py	/^    def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:734
+get_description	../web/apps/dashboard/catalogue/views.py	/^    def get_description(self, form):$/;"	kind:member	line:84
+get_form_kwargs	../web/apps/dashboard/catalogue/views.py	/^    def get_form_kwargs(self):$/;"	kind:member	line:290
+get_initial	../web/apps/dashboard/catalogue/views.py	/^    def get_initial(self):$/;"	kind:member	line:581
+get_invalid_product_class_url	../web/apps/dashboard/catalogue/views.py	/^    def get_invalid_product_class_url(self):$/;"	kind:member	line:158
 get_obj_location	../web/apps/sitemaps.py	/^    def get_obj_location(self, obj):$/;"	kind:member	line:29
 get_obj_location	../web/apps/sitemaps.py	/^    def get_obj_location(self, obj):$/;"	kind:member	line:44
-gettext_noop	../web/conf/base.py	/^gettext_noop = lambda s: s$/;"	kind:variable	line:79
-help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:83
-help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:87
-help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when a page is submitted for moderation")$/;"	kind:variable	line:54
-help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is approved")$/;"	kind:variable	line:61
-help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is rejected")$/;"	kind:variable	line:67
-help_text	../web/apps/user/models.py	/^        help_text=_("Select language for the admin"),$/;"	kind:variable	line:73
-is_moderator	../web/apps/user/models.py	/^    is_moderator = models.BooleanField(_('moderator status'), default=False)$/;"	kind:variable	line:80
-is_verified	../web/apps/user/models.py	/^    is_verified = models.BooleanField(_('verified'), default=False,$/;"	kind:variable	line:82
+get_object	../web/apps/dashboard/catalogue/views.py	/^    def get_object(self):$/;"	kind:member	line:690
+get_object	../web/apps/dashboard/catalogue/views.py	/^    def get_object(self):$/;"	kind:member	line:712
+get_object	../web/apps/dashboard/catalogue/views.py	/^    def get_object(self, queryset=None):$/;"	kind:member	line:230
+get_page_title	../web/apps/dashboard/catalogue/views.py	/^    def get_page_title(self):$/;"	kind:member	line:275
+get_product_create_url	../web/apps/dashboard/catalogue/views.py	/^    def get_product_create_url(self, product_class):$/;"	kind:member	line:153
+get_queryset	../web/apps/dashboard/catalogue/views.py	/^    def get_queryset(self):$/;"	kind:member	line:106
+get_queryset	../web/apps/dashboard/catalogue/views.py	/^    def get_queryset(self):$/;"	kind:member	line:224
+get_queryset	../web/apps/dashboard/catalogue/views.py	/^    def get_queryset(self):$/;"	kind:member	line:433
+get_queryset	../web/apps/dashboard/catalogue/views.py	/^    def get_queryset(self):$/;"	kind:member	line:511
+get_queryset	../web/apps/dashboard/catalogue/views.py	/^    def get_queryset(self):$/;"	kind:member	line:529
+get_queryset	../web/apps/dashboard/catalogue/views.py	/^    def get_queryset(self):$/;"	kind:member	line:621
+get_redirect_url	../web/apps/dashboard/catalogue/views.py	/^    def get_redirect_url(self, **kwargs):$/;"	kind:member	line:162
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:389
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:481
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:558
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:577
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:599
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:613
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:696
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:708
+get_success_url	../web/apps/dashboard/catalogue/views.py	/^    def get_success_url(self):$/;"	kind:member	line:748
+get_table	../web/apps/dashboard/catalogue/views.py	/^    def get_table(self, **kwargs):$/;"	kind:member	line:89
+get_table_data	../web/apps/dashboard/catalogue/views.py	/^    def get_table_data(self):$/;"	kind:member	line:545
+get_table_pagination	../web/apps/dashboard/catalogue/views.py	/^    def get_table_pagination(self, table):$/;"	kind:member	line:97
+get_title	../web/apps/dashboard/catalogue/views.py	/^    def get_title(self):$/;"	kind:member	line:693
+get_title	../web/apps/dashboard/catalogue/views.py	/^    def get_title(self):$/;"	kind:member	line:705
+get_url_with_querystring	../web/apps/dashboard/catalogue/views.py	/^    def get_url_with_querystring(self, url):$/;"	kind:member	line:383
+gettext_noop	../web/conf/base.py	/^gettext_noop = lambda s: s$/;"	kind:variable	line:76
+handle_adding_child	../web/apps/dashboard/catalogue/views.py	/^    def handle_adding_child(self, parent):$/;"	kind:member	line:358
+handle_deleting_last_child	../web/apps/dashboard/catalogue/views.py	/^    def handle_deleting_last_child(self, parent):$/;"	kind:member	line:472
+help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:86
+help_text	../web/apps/user/models.py	/^                                      help_text=_('Designates whether the user has verified his '$/;"	kind:variable	line:90
+help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when a page is submitted for moderation")$/;"	kind:variable	line:57
+help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is approved")$/;"	kind:variable	line:64
+help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is rejected")$/;"	kind:variable	line:70
+help_text	../web/apps/user/models.py	/^        help_text=_("Select language for the admin"),$/;"	kind:variable	line:76
+image_formset	../web/apps/dashboard/catalogue/views.py	/^    image_formset = ProductImageFormSet$/;"	kind:variable	line:194
+is_moderator	../web/apps/user/models.py	/^    is_moderator = models.BooleanField(_('moderator status'), default=False)$/;"	kind:variable	line:83
+is_verified	../web/apps/user/models.py	/^    is_verified = models.BooleanField(_('verified'), default=False,$/;"	kind:variable	line:85
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:41
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:50
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:56
 language_neutral_sitemaps	../web/apps/sitemaps.py	/^language_neutral_sitemaps = {$/;"	kind:variable	line:60
-last_ip	../web/apps/user/models.py	/^    last_ip = models.GenericIPAddressField(_("last ip"), blank=True, null=True)$/;"	kind:variable	line:78
-last_post_hash	../web/apps/user/models.py	/^    last_post_hash = models.CharField(_("last post hash"), max_length=32, blank=True)$/;"	kind:variable	line:95
-last_post_on	../web/apps/user/models.py	/^    last_post_on = models.DateTimeField(_("last post on"), null=True, blank=True)$/;"	kind:variable	line:96
-last_seen	../web/apps/user/models.py	/^    last_seen = models.DateTimeField(_("last seen"), auto_now=True)$/;"	kind:variable	line:77
+last_ip	../web/apps/user/models.py	/^    last_ip = models.GenericIPAddressField(_("last ip"), blank=True, null=True)$/;"	kind:variable	line:81
+last_post_hash	../web/apps/user/models.py	/^    last_post_hash = models.CharField(_("last post hash"), max_length=32, blank=True)$/;"	kind:variable	line:98
+last_post_on	../web/apps/user/models.py	/^    last_post_on = models.DateTimeField(_("last post on"), null=True, blank=True)$/;"	kind:variable	line:99
+last_seen	../web/apps/user/models.py	/^    last_seen = models.DateTimeField(_("last seen"), auto_now=True)$/;"	kind:variable	line:80
 local.example.py	../web/conf/local.example.py	1;"	kind:file	line:1
 location	../web/apps/sitemaps.py	/^    def location(self, obj):$/;"	kind:member	line:32
 location	../web/conf/base.py	/^location = lambda x: os.path.join($/;"	kind:variable	line:18
 logger	../web/apps/gateway/views.py	/^logger = logging.getLogger('gateway')$/;"	kind:variable	line:15
+lookup_filter	../web/apps/dashboard/catalogue/views.py	/^    def lookup_filter(self, qs, term):$/;"	kind:member	line:624
 manage.py	../web/manage.py	1;"	kind:file	line:1
-max_length	../web/apps/user/models.py	/^        max_length=10,$/;"	kind:variable	line:72
+max_length	../web/apps/user/models.py	/^        max_length=10,$/;"	kind:variable	line:75
+model	../web/apps/dashboard/catalogue/forms.py	/^        model = Product$/;"	kind:variable	line:140
+model	../web/apps/dashboard/catalogue/forms.py	/^        model = StockRecord$/;"	kind:variable	line:46
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Category$/;"	kind:variable	line:540
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Category$/;"	kind:variable	line:569
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Category$/;"	kind:variable	line:591
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Category$/;"	kind:variable	line:606
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Product$/;"	kind:variable	line:189
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Product$/;"	kind:variable	line:430
+model	../web/apps/dashboard/catalogue/views.py	/^    model = Product$/;"	kind:variable	line:619
+model	../web/apps/dashboard/catalogue/views.py	/^    model = ProductClass$/;"	kind:variable	line:632
+model	../web/apps/dashboard/catalogue/views.py	/^    model = ProductClass$/;"	kind:variable	line:720
+model	../web/apps/dashboard/catalogue/views.py	/^    model = ProductClass$/;"	kind:variable	line:731
+model	../web/apps/dashboard/catalogue/views.py	/^    model = StockAlert$/;"	kind:variable	line:501
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='attributeoption',$/;"	kind:variable	line:271
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='product',$/;"	kind:variable	line:235
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='product',$/;"	kind:variable	line:241
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='product',$/;"	kind:variable	line:247
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='product',$/;"	kind:variable	line:253
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='product',$/;"	kind:variable	line:259
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='product',$/;"	kind:variable	line:265
+model_name	../web/apps/catalogue/migrations/0001_initial.py	/^            model_name='productattribute',$/;"	kind:variable	line:229
+model_name	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^            model_name='category',$/;"	kind:variable	line:19
+model_name	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^            model_name='category',$/;"	kind:variable	line:15
+model_name	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	/^            model_name='product',$/;"	kind:variable	line:16
+model_name	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^            model_name='productattribute',$/;"	kind:variable	line:17
+model_name	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	/^            model_name='productattribute',$/;"	kind:variable	line:17
+model_name	../web/apps/catalogue/migrations/0009_slugfield_noop.py	/^            model_name='category',$/;"	kind:variable	line:17
+model_name	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            model_name='productattribute',$/;"	kind:variable	line:22
+model_name	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            model_name='productattribute',$/;"	kind:variable	line:27
+model_name	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            model_name='productattributevalue',$/;"	kind:variable	line:17
+model_name	../web/apps/partner/migrations/0001_initial.py	/^            model_name='stockalert',$/;"	kind:variable	line:105
+model_name	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^            model_name='stockrecord',$/;"	kind:variable	line:16
+model_name	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^            model_name='partner',$/;"	kind:variable	line:16
+models.py	../web/apps/catalogue/models.py	1;"	kind:file	line:1
+models.py	../web/apps/dashboard/catalogue/models.py	1;"	kind:file	line:1
 models.py	../web/apps/gateway/models.py	1;"	kind:file	line:1
+models.py	../web/apps/partner/models.py	1;"	kind:file	line:1
 models.py	../web/apps/user/models.py	1;"	kind:file	line:1
+name	../web/apps/catalogue/config.py	/^    name = 'catalogue'$/;"	kind:variable	line:5
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='AttributeOption',$/;"	kind:variable	line:19
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='AttributeOptionGroup',$/;"	kind:variable	line:32
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='Category',$/;"	kind:variable	line:45
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='Option',$/;"	kind:variable	line:66
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='Product',$/;"	kind:variable	line:81
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='ProductAttribute',$/;"	kind:variable	line:103
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='ProductAttributeValue',$/;"	kind:variable	line:121
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='ProductCategory',$/;"	kind:variable	line:146
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='ProductClass',$/;"	kind:variable	line:161
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='ProductImage',$/;"	kind:variable	line:179
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='ProductRecommendation',$/;"	kind:variable	line:197
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='attributes',$/;"	kind:variable	line:236
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='categories',$/;"	kind:variable	line:242
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='group',$/;"	kind:variable	line:272
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='parent',$/;"	kind:variable	line:248
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='product_class',$/;"	kind:variable	line:230
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='product_class',$/;"	kind:variable	line:254
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='product_options',$/;"	kind:variable	line:260
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='productattributevalue',$/;"	kind:variable	line:225
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='productcategory',$/;"	kind:variable	line:221
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='productimage',$/;"	kind:variable	line:217
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='productrecommendation',$/;"	kind:variable	line:213
+name	../web/apps/catalogue/migrations/0001_initial.py	/^            name='recommended_products',$/;"	kind:variable	line:266
+name	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^            name='category',$/;"	kind:variable	line:15
+name	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^            name='full_name',$/;"	kind:variable	line:20
+name	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^            name='slug',$/;"	kind:variable	line:16
+name	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	/^            name='product_class',$/;"	kind:variable	line:17
+name	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^            name='code',$/;"	kind:variable	line:18
+name	../web/apps/catalogue/migrations/0007_auto_20151207_1440.py	/^            name='attributeoption',$/;"	kind:variable	line:15
+name	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	/^            name='code',$/;"	kind:variable	line:18
+name	../web/apps/catalogue/migrations/0009_slugfield_noop.py	/^            name='slug',$/;"	kind:variable	line:18
+name	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            name='option_group',$/;"	kind:variable	line:23
+name	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            name='type',$/;"	kind:variable	line:28
+name	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^            name='value_multi_option',$/;"	kind:variable	line:18
+name	../web/apps/dashboard/catalogue/config.py	/^    name = 'dashboard.catalogue'$/;"	kind:variable	line:5
 name	../web/apps/offers.py	/^    name = description$/;"	kind:variable	line:25
+name	../web/apps/partner/config.py	/^    name = 'partner'$/;"	kind:variable	line:5
+name	../web/apps/partner/migrations/0001_initial.py	/^            name='Partner',$/;"	kind:variable	line:20
+name	../web/apps/partner/migrations/0001_initial.py	/^            name='PartnerAddress',$/;"	kind:variable	line:36
+name	../web/apps/partner/migrations/0001_initial.py	/^            name='StockAlert',$/;"	kind:variable	line:60
+name	../web/apps/partner/migrations/0001_initial.py	/^            name='StockRecord',$/;"	kind:variable	line:77
+name	../web/apps/partner/migrations/0001_initial.py	/^            name='stockrecord',$/;"	kind:variable	line:101
+name	../web/apps/partner/migrations/0001_initial.py	/^            name='stockrecord',$/;"	kind:variable	line:106
+name	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^            name='price_currency',$/;"	kind:variable	line:17
+name	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^            name='users',$/;"	kind:variable	line:17
+name	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^            name='partner',$/;"	kind:variable	line:15
 name	../web/apps/user/apps.py	/^    name = 'user'$/;"	kind:variable	line:5
 name	../web/urls.py	/^        name='django.contrib.sitemaps.views.sitemap')$/;"	kind:variable	line:29
-objects	../web/apps/user/models.py	/^    objects = MyUserManager()$/;"	kind:variable	line:98
+num_in_stock	../web/apps/catalogue/models.py	/^    def num_in_stock(self):$/;"	kind:member	line:26
+num_in_stock	../web/apps/dashboard/catalogue/forms.py	/^    num_in_stock = forms.IntegerField(required=True)$/;"	kind:variable	line:246
+objects	../web/apps/user/models.py	/^    objects = MyUserManager()$/;"	kind:variable	line:101
 offers.py	../web/apps/offers.py	1;"	kind:file	line:1
-on_sale	../web/apps/user/models.py	/^    on_sale = models.BooleanField(_('on sale status'), default=False)$/;"	kind:variable	line:81
-phone_number	../web/apps/user/models.py	/^    phone_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:49
-phone_number_verified	../web/apps/user/models.py	/^    phone_number_verified = models.BooleanField(_('phone number verified'), default=False,$/;"	kind:variable	line:86
-preferred_language	../web/apps/user/models.py	/^    preferred_language = models.CharField($/;"	kind:variable	line:70
+on_sale	../web/apps/user/models.py	/^    on_sale = models.BooleanField(_('on sale status'), default=False)$/;"	kind:variable	line:84
+operations	../web/apps/catalogue/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:17
+operations	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^    operations = [$/;"	kind:variable	line:41
+operations	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../web/apps/catalogue/migrations/0005_auto_20150604_1450.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../web/apps/catalogue/migrations/0007_auto_20151207_1440.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../web/apps/catalogue/migrations/0008_auto_20160304_1652.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../web/apps/catalogue/migrations/0009_slugfield_noop.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../web/apps/catalogue/migrations/0010_auto_20170420_0439.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../web/apps/partner/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
+operations	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^    operations = [$/;"	kind:variable	line:13
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:112
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:138
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:152
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:170
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:188
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:204
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:24
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:37
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:57
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:73
+options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:94
+options	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	/^            options={'ordering': ['path'], 'verbose_name': 'Category', 'verbose_name_plural': 'Categories'},$/;"	kind:variable	line:16
+options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:27
+options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:52
+options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:68
+options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:93
+options	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^            options={'ordering': ('name', 'code'), 'verbose_name': 'Fulfillment partner', 'verbose_name_plural': 'Fulfillment partners', 'permissions': (('dashboard_access', 'Can access dashboard'),)},$/;"	kind:variable	line:16
+paginate_by	../web/apps/dashboard/catalogue/views.py	/^    paginate_by = settings.OSCAR_STOCK_ALERTS_PER_PAGE$/;"	kind:variable	line:503
+parent_pricing_policy	../web/apps/partner/strategy.py	/^    def parent_pricing_policy(self, product, children_stock):$/;"	kind:member	line:45
+permanent	../web/apps/dashboard/catalogue/views.py	/^    permanent = False$/;"	kind:variable	line:150
+phone_number	../web/apps/user/models.py	/^    phone_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:52
+phone_number_verified	../web/apps/user/models.py	/^    phone_number_verified = models.BooleanField(_('phone number verified'), default=False,$/;"	kind:variable	line:89
+preferred_language	../web/apps/user/models.py	/^    preferred_language = models.CharField($/;"	kind:variable	line:73
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:232
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:238
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:244
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:250
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:256
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:262
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:268
+preserve_default	../web/apps/catalogue/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:274
+preserve_default	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^            preserve_default=True,$/;"	kind:variable	line:18
+preserve_default	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^            preserve_default=True,$/;"	kind:variable	line:20
+preserve_default	../web/apps/partner/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:108
+prices.py	../web/apps/partner/prices.py	1;"	kind:file	line:1
+pricing_policy	../web/apps/partner/strategy.py	/^    def pricing_policy(self, product, stockrecord):$/;"	kind:member	line:37
+process_all_forms	../web/apps/dashboard/catalogue/views.py	/^    def process_all_forms(self, form):$/;"	kind:member	line:296
+process_all_forms	../web/apps/dashboard/catalogue/views.py	/^    def process_all_forms(self, form):$/;"	kind:member	line:636
+product_attributes_formset	../web/apps/dashboard/catalogue/views.py	/^    product_attributes_formset = ProductAttributesFormSet$/;"	kind:variable	line:634
+productclass_form_class	../web/apps/dashboard/catalogue/views.py	/^    productclass_form_class = ProductClassSelectForm$/;"	kind:variable	line:151
+productclass_form_class	../web/apps/dashboard/catalogue/views.py	/^    productclass_form_class = ProductClassSelectForm$/;"	kind:variable	line:74
 proxy	../web/apps/offers.py	/^        proxy = True$/;"	kind:variable	line:7
-rejected_notifications	../web/apps/user/models.py	/^    rejected_notifications = models.BooleanField($/;"	kind:variable	line:64
+rejected_notifications	../web/apps/user/models.py	/^    rejected_notifications = models.BooleanField($/;"	kind:variable	line:67
+remove_ancestor_slugs	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^def remove_ancestor_slugs(apps, schema_editor):$/;"	kind:function	line:20
+save	../web/apps/dashboard/catalogue/forms.py	/^    def save(self, commit=True):$/;"	kind:member	line:253
 send_confirmation_email	../web/apps/gateway/views.py	/^    def send_confirmation_email(self, real_email, user, password):$/;"	kind:member	line:44
+set_initial	../web/apps/dashboard/catalogue/forms.py	/^    def set_initial(self, product_class, parent, kwargs):$/;"	kind:member	line:168
+set_initial_attribute_values	../web/apps/dashboard/catalogue/forms.py	/^    def set_initial_attribute_values(self, product_class, kwargs):$/;"	kind:member	line:180
+set_stockrecord	../web/apps/catalogue/models.py	/^    def set_stockrecord(self, cost_price, num_in_stock):$/;"	kind:member	line:32
 sitemaps.py	../web/apps/sitemaps.py	1;"	kind:file	line:1
-submitted_notifications	../web/apps/user/models.py	/^    submitted_notifications = models.BooleanField($/;"	kind:variable	line:51
+strategy	../web/apps/partner/strategy.py	/^    def strategy(self, request=None, user=None, **kwargs):$/;"	kind:member	line:14
+strategy.py	../web/apps/partner/strategy.py	1;"	kind:file	line:1
+submitted_notifications	../web/apps/user/models.py	/^    submitted_notifications = models.BooleanField($/;"	kind:variable	line:54
+table_class	../web/apps/dashboard/catalogue/views.py	/^    table_class = CategoryTable$/;"	kind:variable	line:526
+table_class	../web/apps/dashboard/catalogue/views.py	/^    table_class = CategoryTable$/;"	kind:variable	line:542
+table_class	../web/apps/dashboard/catalogue/views.py	/^    table_class = ProductTable$/;"	kind:variable	line:75
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/category_delete.html'$/;"	kind:variable	line:605
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/category_form.html'$/;"	kind:variable	line:568
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/category_form.html'$/;"	kind:variable	line:590
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/category_list.html'$/;"	kind:variable	line:525
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/category_list.html'$/;"	kind:variable	line:539
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/product_class_delete.html'$/;"	kind:variable	line:730
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/product_class_form.html'$/;"	kind:variable	line:631
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/product_class_list.html'$/;"	kind:variable	line:718
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/product_delete.html'$/;"	kind:variable	line:429
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/product_list.html'$/;"	kind:variable	line:72
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/product_update.html'$/;"	kind:variable	line:188
+template_name	../web/apps/dashboard/catalogue/views.py	/^    template_name = 'dashboard\/catalogue\/stockalert_list.html'$/;"	kind:variable	line:500
 template_name	../web/apps/gateway/views.py	/^    template_name = 'gateway\/form.html'$/;"	kind:variable	line:19
-timezone	../web/apps/user/models.py	/^    timezone = models.CharField(_("time zone"), max_length=32, default='UTC')$/;"	kind:variable	line:79
-topic_count	../web/apps/user/models.py	/^    topic_count = models.PositiveIntegerField(_("topic count"), default=0)$/;"	kind:variable	line:92
+timezone	../web/apps/user/models.py	/^    timezone = models.CharField(_("time zone"), max_length=32, default='UTC')$/;"	kind:variable	line:82
+title	../web/apps/dashboard/catalogue/forms.py	/^    title = forms.CharField($/;"	kind:variable	line:14
+topic_count	../web/apps/user/models.py	/^    topic_count = models.PositiveIntegerField(_("topic count"), default=0)$/;"	kind:variable	line:95
+unique_together	../web/apps/catalogue/migrations/0001_initial.py	/^            unique_together=set([('attribute', 'product')]),$/;"	kind:variable	line:226
+unique_together	../web/apps/catalogue/migrations/0001_initial.py	/^            unique_together=set([('primary', 'recommendation')]),$/;"	kind:variable	line:214
+unique_together	../web/apps/catalogue/migrations/0001_initial.py	/^            unique_together=set([('product', 'category')]),$/;"	kind:variable	line:222
+unique_together	../web/apps/catalogue/migrations/0001_initial.py	/^            unique_together=set([('product', 'display_order')]),$/;"	kind:variable	line:218
+unique_together	../web/apps/catalogue/migrations/0007_auto_20151207_1440.py	/^            unique_together=set([('group', 'option')]),$/;"	kind:variable	line:16
+unique_together	../web/apps/partner/migrations/0001_initial.py	/^            unique_together=set([('partner', 'partner_sku')]),$/;"	kind:variable	line:102
 urlpatterns	../web/apps/gateway/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
 urlpatterns	../web/urls.py	/^urlpatterns = [$/;"	kind:variable	line:16
 urls.py	../web/apps/gateway/urls.py	1;"	kind:file	line:1
 urls.py	../web/urls.py	1;"	kind:file	line:1
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('approved notifications'),$/;"	kind:variable	line:59
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('preferred language'),$/;"	kind:variable	line:71
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('rejected notifications'),$/;"	kind:variable	line:65
-verbose_name	../web/apps/user/models.py	/^        verbose_name=_('submitted notifications'),$/;"	kind:variable	line:52
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('approved notifications'),$/;"	kind:variable	line:62
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('preferred language'),$/;"	kind:variable	line:74
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('rejected notifications'),$/;"	kind:variable	line:68
+verbose_name	../web/apps/user/models.py	/^        verbose_name=_('submitted notifications'),$/;"	kind:variable	line:55
+views.py	../web/apps/dashboard/catalogue/views.py	1;"	kind:file	line:1
 views.py	../web/apps/gateway/views.py	1;"	kind:file	line:1
+widgets	../web/apps/dashboard/catalogue/forms.py	/^        widgets = {$/;"	kind:variable	line:143
 wsgi.py	../web/wsgi.py	1;"	kind:file	line:1
