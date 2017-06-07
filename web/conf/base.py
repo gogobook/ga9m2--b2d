@@ -121,7 +121,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = location('public/static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = (
-    location('static/'),
+    location('public/static'),
 )
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -345,7 +345,7 @@ from oscar.defaults import *
 # Meta
 # ====
 
-OSCAR_SHOP_TAGLINE = 'Sandbox'
+OSCAR_SHOP_TAGLINE = '安全雲-養車經'
 
 OSCAR_RECENTLY_VIEWED_PRODUCTS = 20
 OSCAR_ALLOW_ANON_CHECKOUT = True
@@ -387,7 +387,8 @@ OSCAR_ORDER_STATUS_CASCADE = {
 # We default to using CSS files, rather than the LESS files that generate them.
 # If you want to develop Oscar's CSS, then set USE_LESS=True to enable the
 # on-the-fly less processor.
-USE_LESS = False
+# 目前在
+USE_LESS = True
 
 
 # Sentry
@@ -442,4 +443,4 @@ try:
     from settings_local import *
 except ImportError:
     pass
-OSCAR_DEFAULT_CURRENCY = "NTD "
+OSCAR_DEFAULT_CURRENCY = "NT$ "

@@ -23,6 +23,7 @@ ALLOWED_HOSTS	../web/conf/base.py	/^ALLOWED_HOSTS = [$/;"	kind:variable	line:25
 APPEND_SLASH	../web/conf/base.py	/^APPEND_SLASH = True$/;"	kind:variable	line:306
 AUTHENTICATION_BACKENDS	../web/conf/base.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:300
 AUTH_USER_MODEL	../web/conf/base.py	/^AUTH_USER_MODEL='user.Profile'$/;"	kind:variable	line:38
+Available	../web/apps/partner/strategy.py	/^Available = get_class('partner.availability', 'Available')$/;"	kind:variable	line:11
 BASE_DIR	../web/conf/base.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) $/;"	kind:variable	line:16
 CACHES	../web/conf/base.py	/^CACHES = {$/;"	kind:variable	line:53
 CatalogueConfig	../web/apps/catalogue/config.py	/^class CatalogueConfig(config.CatalogueConfig):$/;"	kind:class	line:4
@@ -90,8 +91,8 @@ OSCAR_INITIAL_ORDER_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_ORDER_STATUS = 'P
 OSCAR_ORDER_STATUS_CASCADE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_CASCADE = {$/;"	kind:variable	line:378
 OSCAR_ORDER_STATUS_PIPELINE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_PIPELINE = {$/;"	kind:variable	line:369
 OSCAR_RECENTLY_VIEWED_PRODUCTS	../web/conf/base.py	/^OSCAR_RECENTLY_VIEWED_PRODUCTS = 20$/;"	kind:variable	line:350
-OSCAR_SHOP_TAGLINE	../web/conf/base.py	/^OSCAR_SHOP_TAGLINE = 'Sandbox'$/;"	kind:variable	line:348
-OscarDemoStrategy	../web/apps/partner/strategy.py	/^                 # fetch_for_product and fetch_for_parent (product)$/;"	kind:class	line:31
+OSCAR_SHOP_TAGLINE	../web/conf/base.py	/^OSCAR_SHOP_TAGLINE = '安全雲-養車經'$/;"	kind:variable	line:348
+OscarDemoStrategy	../web/apps/partner/strategy.py	/^                 # fetch_for_product and fetch_for_parent (product)$/;"	kind:class	line:34
 OscarProductForm	../web/apps/dashboard/catalogue/forms.py	/^class OscarProductForm(forms.ModelForm):$/;"	kind:class	line:123
 Partner	../web/apps/dashboard/catalogue/views.py	/^Partner = get_model('partner', 'Partner')$/;"	kind:variable	line:49
 Partner	../web/apps/user/models.py	/^Partner = get_model('partner', 'Partner')$/;"	kind:variable	line:18
@@ -128,7 +129,7 @@ STATICFILES_FINDERS	../web/conf/base.py	/^STATICFILES_FINDERS = ($/;"	kind:varia
 STATICFILES_STORAGE	../web/conf/base.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:122
 STATIC_ROOT	../web/conf/base.py	/^STATIC_ROOT = location('public\/static')$/;"	kind:variable	line:121
 STATIC_URL	../web/conf/base.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
-Selector	../web/apps/partner/strategy.py	/^class Selector(OscarSelector):$/;"	kind:class	line:12
+Selector	../web/apps/partner/strategy.py	/^class Selector(OscarSelector):$/;"	kind:class	line:15
 StaticSitemap	../web/apps/sitemaps.py	/^class StaticSitemap(I18nSitemap):$/;"	kind:class	line:39
 StockAlert	../web/apps/dashboard/catalogue/views.py	/^StockAlert = get_model('partner', 'StockAlert')$/;"	kind:variable	line:48
 StockAlertListView	../web/apps/dashboard/catalogue/views.py	/^class StockAlertListView(generic.ListView):$/;"	kind:class	line:499
@@ -136,6 +137,7 @@ StockRecord	../web/apps/dashboard/catalogue/forms.py	/^StockRecord = get_model('
 StockRecord	../web/apps/dashboard/catalogue/views.py	/^StockRecord = get_model('partner', 'StockRecord')$/;"	kind:variable	line:47
 StockRecordForm	../web/apps/dashboard/catalogue/forms.py	/^class StockRecordForm(forms.ModelForm):$/;"	kind:class	line:23
 StockRecordFormSet	../web/apps/dashboard/catalogue/formsets.py	/^class StockRecordFormSet(OscarStockRecordFormSet):$/;"	kind:class	line:5
+StockRequiredAvailability	../web/apps/partner/strategy.py	/^StockRequiredAvailability = get_class('partner.availability', 'StockRequired')$/;"	kind:variable	line:12
 TEMPLATES	../web/conf/base.py	/^TEMPLATES = [$/;"	kind:variable	line:133
 TEST_RUNNER	../web/conf/base.py	/^TEST_RUNNER = 'django.test.runner.DiscoverRunner'$/;"	kind:variable	line:68
 THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:409
@@ -145,8 +147,9 @@ THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_R
 TIME_ZONE	../web/conf/base.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:66
 USE_I18N	../web/conf/base.py	/^USE_I18N = True$/;"	kind:variable	line:105
 USE_L10N	../web/conf/base.py	/^USE_L10N = True$/;"	kind:variable	line:109
-USE_LESS	../web/conf/base.py	/^USE_LESS = False$/;"	kind:variable	line:390
+USE_LESS	../web/conf/base.py	/^USE_LESS = True$/;"	kind:variable	line:390
 USE_TZ	../web/conf/base.py	/^USE_TZ = True$/;"	kind:variable	line:65
+Unavailable	../web/apps/partner/strategy.py	/^Unavailable = get_class('partner.availability', 'Unavailable')$/;"	kind:variable	line:10
 UserConfig	../web/apps/user/apps.py	/^class UserConfig(AppConfig):$/;"	kind:class	line:4
 __init__	../web/apps/dashboard/catalogue/forms.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:248
 __init__	../web/apps/dashboard/catalogue/forms.py	/^    def __init__(self, product_class, data=None, parent=None, *args, **kwargs):$/;"	kind:member	line:147
@@ -190,6 +193,7 @@ apply_deferred	../web/apps/offers.py	/^    def apply_deferred(self, basket, orde
 apply_search	../web/apps/dashboard/catalogue/views.py	/^    def apply_search(self, queryset):$/;"	kind:member	line:115
 approved_notifications	../web/apps/user/models.py	/^    approved_notifications = models.BooleanField($/;"	kind:variable	line:61
 apps.py	../web/apps/user/apps.py	1;"	kind:file	line:1
+availability_policy	../web/apps/partner/strategy.py	/^    def availability_policy(self, product, stockrecord):$/;"	kind:member	line:37
 base.py	../web/conf/base.py	1;"	kind:file	line:1
 base_sitemaps	../web/apps/sitemaps.py	/^base_sitemaps = {}$/;"	kind:variable	line:67
 bases	../web/apps/catalogue/migrations/0001_initial.py	/^            bases=(models.Model,),$/;"	kind:variable	line:100
@@ -510,7 +514,7 @@ options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/
 options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:93
 options	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^            options={'ordering': ('name', 'code'), 'verbose_name': 'Fulfillment partner', 'verbose_name_plural': 'Fulfillment partners', 'permissions': (('dashboard_access', 'Can access dashboard'),)},$/;"	kind:variable	line:16
 paginate_by	../web/apps/dashboard/catalogue/views.py	/^    paginate_by = settings.OSCAR_STOCK_ALERTS_PER_PAGE$/;"	kind:variable	line:503
-parent_pricing_policy	../web/apps/partner/strategy.py	/^    def parent_pricing_policy(self, product, children_stock):$/;"	kind:member	line:45
+parent_pricing_policy	../web/apps/partner/strategy.py	/^    def parent_pricing_policy(self, product, children_stock):$/;"	kind:member	line:57
 permanent	../web/apps/dashboard/catalogue/views.py	/^    permanent = False$/;"	kind:variable	line:150
 phone_number	../web/apps/user/models.py	/^    phone_number = PhoneNumberField(blank=True)$/;"	kind:variable	line:52
 phone_number_verified	../web/apps/user/models.py	/^    phone_number_verified = models.BooleanField(_('phone number verified'), default=False,$/;"	kind:variable	line:89
@@ -527,7 +531,7 @@ preserve_default	../web/apps/catalogue/migrations/0004_auto_20150217_1710.py	/^ 
 preserve_default	../web/apps/catalogue/migrations/0006_auto_20150807_1725.py	/^            preserve_default=True,$/;"	kind:variable	line:20
 preserve_default	../web/apps/partner/migrations/0001_initial.py	/^            preserve_default=True,$/;"	kind:variable	line:108
 prices.py	../web/apps/partner/prices.py	1;"	kind:file	line:1
-pricing_policy	../web/apps/partner/strategy.py	/^    def pricing_policy(self, product, stockrecord):$/;"	kind:member	line:37
+pricing_policy	../web/apps/partner/strategy.py	/^    def pricing_policy(self, product, stockrecord):$/;"	kind:member	line:49
 process_all_forms	../web/apps/dashboard/catalogue/views.py	/^    def process_all_forms(self, form):$/;"	kind:member	line:296
 process_all_forms	../web/apps/dashboard/catalogue/views.py	/^    def process_all_forms(self, form):$/;"	kind:member	line:636
 product_attributes_formset	../web/apps/dashboard/catalogue/views.py	/^    product_attributes_formset = ProductAttributesFormSet$/;"	kind:variable	line:634
@@ -542,7 +546,7 @@ set_initial	../web/apps/dashboard/catalogue/forms.py	/^    def set_initial(self,
 set_initial_attribute_values	../web/apps/dashboard/catalogue/forms.py	/^    def set_initial_attribute_values(self, product_class, kwargs):$/;"	kind:member	line:180
 set_stockrecord	../web/apps/catalogue/models.py	/^    def set_stockrecord(self, cost_price, num_in_stock):$/;"	kind:member	line:32
 sitemaps.py	../web/apps/sitemaps.py	1;"	kind:file	line:1
-strategy	../web/apps/partner/strategy.py	/^    def strategy(self, request=None, user=None, **kwargs):$/;"	kind:member	line:14
+strategy	../web/apps/partner/strategy.py	/^    def strategy(self, request=None, user=None, **kwargs):$/;"	kind:member	line:17
 strategy.py	../web/apps/partner/strategy.py	1;"	kind:file	line:1
 submitted_notifications	../web/apps/user/models.py	/^    submitted_notifications = models.BooleanField($/;"	kind:variable	line:54
 table_class	../web/apps/dashboard/catalogue/views.py	/^    table_class = CategoryTable$/;"	kind:variable	line:526
