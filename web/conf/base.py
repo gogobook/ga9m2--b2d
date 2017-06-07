@@ -444,3 +444,4 @@ try:
 except ImportError:
     pass
 OSCAR_DEFAULT_CURRENCY = "NT$ "
+OSCAR_HIDDEN_FEATURES=['reviews',]
