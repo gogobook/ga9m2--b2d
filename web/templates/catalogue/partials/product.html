@@ -1,0 +1,32 @@
+{% load reviews_tags %}
+{% load thumbnail %}
+{% load i18n %}
+{% load display_tags %}
+{% load staticfiles %}
+
+{% block product %}
+    <article class="product_pod">
+        {% block product_image %}
+            <div class="image_container">
+                {% with image=product.primary_image %}
+                    {% thumbnail image.original "x155" upscale=False as thumb %}
+                    <a href="{{ product.get_absolute_url }}"><img src="{{ thumb.url }}" alt="{{ product.get_title }}" class="thumbnail"></a>
+                    {% endthumbnail %}
+                {% endwith %}
+            </div>
+        {% endblock %}
+
+        {% block product_title %}
+            <h3><a href="{{ product.get_absolute_url }}" title="{{ product.get_title }}">{{ product.get_title|truncatewords:4 }}</a></h3>
+            <h3>更新於 {{ product.date_updated|timesince }}前</h3>
+            <h3>now {% now "z" %}</h3>
+        {% endblock %}
+
+        {% block product_price %}
+            <div class="product_price">
+                {% include "catalogue/partials/stock_record.html" %}
+
+            </div>
+        {% endblock %}
+    </article>
+{% endblock %}

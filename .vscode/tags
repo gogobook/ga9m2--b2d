@@ -42,13 +42,13 @@ CostBasedPrice	../web/apps/partner/prices.py	/^class CostBasedPrice(FixedPrice):
 DATABASES	../web/conf/base.py	/^DATABASES = {$/;"	kind:variable	line:42
 DEBUG	../web/conf/base.py	/^DEBUG = os.environ['DEBUG']$/;"	kind:variable	line:20
 DISPLAY_VERSION	../web/conf/base.py	/^DISPLAY_VERSION = False$/;"	kind:variable	line:356
-EMAIL_BACKEND	../web/conf/base.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:423
-EMAIL_HOST	../web/conf/base.py	/^EMAIL_HOST = 'mail.gandi.net'$/;"	kind:variable	line:435
-EMAIL_HOST_PASSWORD	../web/conf/base.py	/^EMAIL_HOST_PASSWORD = '0988][poiuy'$/;"	kind:variable	line:438
-EMAIL_HOST_USER	../web/conf/base.py	/^EMAIL_HOST_USER = 'service@safecloud.com.tw'$/;"	kind:variable	line:436
-EMAIL_PORT	../web/conf/base.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:426
-EMAIL_SUBJECT_PREFIX	../web/conf/base.py	/^EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '$/;"	kind:variable	line:424
-EMAIL_USE_TLS	../web/conf/base.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:427
+EMAIL_BACKEND	../web/conf/base.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:424
+EMAIL_HOST	../web/conf/base.py	/^EMAIL_HOST = 'mail.gandi.net'$/;"	kind:variable	line:436
+EMAIL_HOST_PASSWORD	../web/conf/base.py	/^EMAIL_HOST_PASSWORD = '0988][poiuy'$/;"	kind:variable	line:439
+EMAIL_HOST_USER	../web/conf/base.py	/^EMAIL_HOST_USER = 'service@safecloud.com.tw'$/;"	kind:variable	line:437
+EMAIL_PORT	../web/conf/base.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:427
+EMAIL_SUBJECT_PREFIX	../web/conf/base.py	/^EMAIL_SUBJECT_PREFIX = '[My-oscar sandbox] '$/;"	kind:variable	line:425
+EMAIL_USE_TLS	../web/conf/base.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:428
 FIELD_FACTORIES	../web/apps/dashboard/catalogue/forms.py	/^    FIELD_FACTORIES = {$/;"	kind:variable	line:124
 GatewayForm	../web/apps/gateway/forms.py	/^class GatewayForm(forms.Form):$/;"	kind:class	line:7
 GatewayView	../web/apps/gateway/views.py	/^class GatewayView(generic.FormView):$/;"	kind:class	line:18
@@ -85,7 +85,8 @@ Migration	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^class Migr
 MyUserManager	../web/apps/user/models.py	/^class MyUserManager(UserManager):$/;"	kind:class	line:20
 ORMCategory	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^ORMCategory = get_model('catalogue', 'Category')$/;"	kind:variable	line:17
 OSCAR_ALLOW_ANON_CHECKOUT	../web/conf/base.py	/^OSCAR_ALLOW_ANON_CHECKOUT = True$/;"	kind:variable	line:351
-OSCAR_DEFAULT_CURRENCY	../web/conf/base.py	/^OSCAR_DEFAULT_CURRENCY = "NTD "$/;"	kind:variable	line:445
+OSCAR_DEFAULT_CURRENCY	../web/conf/base.py	/^OSCAR_DEFAULT_CURRENCY = "NT$ "$/;"	kind:variable	line:446
+OSCAR_HIDDEN_FEATURES	../web/conf/base.py	/^OSCAR_HIDDEN_FEATURES=['reviews',]/;"	kind:variable	line:447
 OSCAR_INITIAL_LINE_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_LINE_STATUS = 'Pending'$/;"	kind:variable	line:366
 OSCAR_INITIAL_ORDER_STATUS	../web/conf/base.py	/^OSCAR_INITIAL_ORDER_STATUS = 'Pending'$/;"	kind:variable	line:365
 OSCAR_ORDER_STATUS_CASCADE	../web/conf/base.py	/^OSCAR_ORDER_STATUS_CASCADE = {$/;"	kind:variable	line:378
@@ -118,10 +119,10 @@ ProductLookupView	../web/apps/dashboard/catalogue/views.py	/^class ProductLookup
 ProductSearchForm	../web/apps/dashboard/catalogue/forms.py	/^class ProductSearchForm(forms.Form):$/;"	kind:class	line:13
 ProductSitemap	../web/apps/sitemaps.py	/^class ProductSitemap(I18nSitemap):$/;"	kind:class	line:48
 Profile	../web/apps/user/models.py	/^class Profile(AbstractUser):$/;"	kind:class	line:48
-RAVEN_CONFIG	../web/conf/base.py	/^    RAVEN_CONFIG = {'dsn': env('SENTRY_DSN', default=None)}$/;"	kind:variable	line:397
+RAVEN_CONFIG	../web/conf/base.py	/^    RAVEN_CONFIG = {'dsn': env('SENTRY_DSN', default=None)}$/;"	kind:variable	line:398
 ROOT_URLCONF	../web/conf/base.py	/^ROOT_URLCONF = 'urls'$/;"	kind:variable	line:189
 SECRET_KEY	../web/conf/base.py	/^SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:10
-SESSION_SERIALIZER	../web/conf/base.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'$/;"	kind:variable	line:421
+SESSION_SERIALIZER	../web/conf/base.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'$/;"	kind:variable	line:422
 SITE_ID	../web/conf/base.py	/^SITE_ID = 1$/;"	kind:variable	line:101
 SQL_DEBUG	../web/conf/base.py	/^SQL_DEBUG = DEBUG$/;"	kind:variable	line:21
 STATICFILES_DIRS	../web/conf/base.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:123
@@ -140,14 +141,14 @@ StockRecordFormSet	../web/apps/dashboard/catalogue/formsets.py	/^class StockReco
 StockRequiredAvailability	../web/apps/partner/strategy.py	/^StockRequiredAvailability = get_class('partner.availability', 'StockRequired')$/;"	kind:variable	line:12
 TEMPLATES	../web/conf/base.py	/^TEMPLATES = [$/;"	kind:variable	line:133
 TEST_RUNNER	../web/conf/base.py	/^TEST_RUNNER = 'django.test.runner.DiscoverRunner'$/;"	kind:variable	line:68
-THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:409
-THUMBNAIL_KEY_PREFIX	../web/conf/base.py	/^THUMBNAIL_KEY_PREFIX = 'oscar-sandbox'$/;"	kind:variable	line:410
-THUMBNAIL_KVSTORE	../web/conf/base.py	/^THUMBNAIL_KVSTORE = env($/;"	kind:variable	line:411
-THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)$/;"	kind:variable	line:414
+THUMBNAIL_DEBUG	../web/conf/base.py	/^THUMBNAIL_DEBUG = DEBUG$/;"	kind:variable	line:410
+THUMBNAIL_KEY_PREFIX	../web/conf/base.py	/^THUMBNAIL_KEY_PREFIX = 'oscar-sandbox'$/;"	kind:variable	line:411
+THUMBNAIL_KVSTORE	../web/conf/base.py	/^THUMBNAIL_KVSTORE = env($/;"	kind:variable	line:412
+THUMBNAIL_REDIS_URL	../web/conf/base.py	/^THUMBNAIL_REDIS_URL = env('THUMBNAIL_REDIS_URL', default=None)$/;"	kind:variable	line:415
 TIME_ZONE	../web/conf/base.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:66
 USE_I18N	../web/conf/base.py	/^USE_I18N = True$/;"	kind:variable	line:105
 USE_L10N	../web/conf/base.py	/^USE_L10N = True$/;"	kind:variable	line:109
-USE_LESS	../web/conf/base.py	/^USE_LESS = True$/;"	kind:variable	line:390
+USE_LESS	../web/conf/base.py	/^USE_LESS = True$/;"	kind:variable	line:391
 USE_TZ	../web/conf/base.py	/^USE_TZ = True$/;"	kind:variable	line:65
 Unavailable	../web/apps/partner/strategy.py	/^Unavailable = get_class('partner.availability', 'Unavailable')$/;"	kind:variable	line:10
 UserConfig	../web/apps/user/apps.py	/^class UserConfig(AppConfig):$/;"	kind:class	line:4
@@ -238,7 +239,7 @@ default	../web/apps/user/models.py	/^        default=''$/;"	kind:variable	line:7
 default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:56
 default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:63
 default	../web/apps/user/models.py	/^        default=True,$/;"	kind:variable	line:69
-default	../web/conf/base.py	/^    default='sorl.thumbnail.kvstores.cached_db_kvstore.KVStore')$/;"	kind:variable	line:413
+default	../web/conf/base.py	/^    default='sorl.thumbnail.kvstores.cached_db_kvstore.KVStore')$/;"	kind:variable	line:414
 default_app_config	../web/apps/catalogue/__init__.py	/^default_app_config = 'apps.catalogue.config.CatalogueConfig'$/;"	kind:variable	line:1
 default_app_config	../web/apps/dashboard/catalogue/__init__.py	/^default_app_config = 'apps.dashboard.catalogue.config.CatalogueDashboardConfig'$/;"	kind:variable	line:1
 default_app_config	../web/apps/partner/__init__.py	/^default_app_config = 'apps.partner.config.PartnerConfig'$/;"	kind:variable	line:1

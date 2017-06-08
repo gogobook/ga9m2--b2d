@@ -25,6 +25,7 @@
     {% category_tree as tree_categories %}
     {% if tree_categories %}
         <h4>{% trans "Show results for" %}</h4>
+        <h4>這裡是block column_left</h4>
         <div class="side_categories">
             <ul class="nav nav-list">
                 {% for tree_category, info in tree_categories %}
@@ -47,6 +48,7 @@
     {% endif %}
     {% if has_facets %}
         <h4>{% trans "Refine by" %}</h4>
+        <h4>這裡是 if has_facets</h4>
         <div class="side_categories">
             {% for field, data in facet_data.items %}
                 {% if data.results %}
@@ -97,7 +99,10 @@
             <div>
                 <ol class="row">
                     {% for product in products %}
-                        <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">{% render_product product %}</li>
+                        <li class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                            {# render_product 是在templatetags內的product_tags.py的 def render_product #}
+                            {% render_product product %}
+                        </li>
                     {% endfor %}
                 </ol>
                 {% include "partials/pagination.html" %}
