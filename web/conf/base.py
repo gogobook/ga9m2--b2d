@@ -69,34 +69,41 @@ TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hant'
 
 # Includes all languages that have >50% coverage in Transifex
 # Taken from Django's default setting for LANGUAGES
 gettext_noop = lambda s: s
 LANGUAGES = (
-    ('ar', gettext_noop('Arabic')),
-    ('ca', gettext_noop('Catalan')),
-    ('cs', gettext_noop('Czech')),
-    ('da', gettext_noop('Danish')),
-    ('de', gettext_noop('German')),
+    # ('ar', gettext_noop('Arabic')),
+    # ('ca', gettext_noop('Catalan')),
+    # ('cs', gettext_noop('Czech')),
+    # ('da', gettext_noop('Danish')),
+    # ('de', gettext_noop('German')),
     ('en-gb', gettext_noop('British English')),
-    ('el', gettext_noop('Greek')),
-    ('es', gettext_noop('Spanish')),
-    ('fi', gettext_noop('Finnish')),
-    ('fr', gettext_noop('French')),
-    ('it', gettext_noop('Italian')),
-    ('ko', gettext_noop('Korean')),
-    ('nl', gettext_noop('Dutch')),
-    ('pl', gettext_noop('Polish')),
-    ('pt', gettext_noop('Portuguese')),
-    ('pt-br', gettext_noop('Brazilian Portuguese')),
-    ('ro', gettext_noop('Romanian')),
-    ('ru', gettext_noop('Russian')),
-    ('sk', gettext_noop('Slovak')),
-    ('uk', gettext_noop('Ukrainian')),
-    ('zh-cn', gettext_noop('Simplified Chinese')),
+    # ('el', gettext_noop('Greek')),
+    # ('es', gettext_noop('Spanish')),
+    # ('fi', gettext_noop('Finnish')),
+    # ('fr', gettext_noop('French')),
+    # ('it', gettext_noop('Italian')),
+    # ('ko', gettext_noop('Korean')),
+    # ('nl', gettext_noop('Dutch')),
+    # ('pl', gettext_noop('Polish')),
+    # ('pt', gettext_noop('Portuguese')),
+    # ('pt-br', gettext_noop('Brazilian Portuguese')),
+    # ('ro', gettext_noop('Romanian')),
+    # ('ru', gettext_noop('Russian')),
+    # ('sk', gettext_noop('Slovak')),
+    # ('uk', gettext_noop('Ukrainian')),
+    ('zh-hant', gettext_noop('中文 (繁體)')),
+    # ('zh-cn', gettext_noop('Simplified Chinese')),
+
 )
+# 要使用zh_Hant，翻譯部份已完成。
+LOCALE_PATHS = [
+    './locale',
+
+]
 
 SITE_ID = 1
 
@@ -118,7 +125,7 @@ MEDIA_ROOT = location("public/media")
 MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
-STATIC_ROOT = location('public/static')
+STATIC_ROOT = location('public')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = (
     location('public/static'),

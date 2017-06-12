@@ -73,6 +73,9 @@
                 {% include "catalogue/partials/stock_record.html" with verbose=1 %}
             {% purchase_info_for_product request product as session %}
                 <p class="price_color">賣家 {{ session.stockrecord.partner }}</p>
+                {% if request.user == session.stockrecord.partner %}
+                <p> 我是賣家 (這裡無法顯示，但暫時不處理)</p>
+                {% endif %}
 
             {% endblock %}
             <h2> 賣家 {{product.partner}} </h2>

@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 0001_initial.py	../web/apps/catalogue/migrations/0001_initial.py	1;"	kind:file	line:1
 0001_initial.py	../web/apps/partner/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../web/apps/user/migrations/0001_initial.py	1;"	kind:file	line:1
 0002_auto_20141007_2032.py	../web/apps/partner/migrations/0002_auto_20141007_2032.py	1;"	kind:file	line:1
 0002_auto_20150217_1221.py	../web/apps/catalogue/migrations/0002_auto_20150217_1221.py	1;"	kind:file	line:1
 0003_auto_20150604_1450.py	../web/apps/partner/migrations/0003_auto_20150604_1450.py	1;"	kind:file	line:1
@@ -82,6 +83,7 @@ Migration	../web/apps/partner/migrations/0001_initial.py	/^class Migration(migra
 Migration	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../web/apps/user/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
 MyUserManager	../web/apps/user/models.py	/^class MyUserManager(UserManager):$/;"	kind:class	line:20
 ORMCategory	../web/apps/catalogue/migrations/0003_data_migration_slugs.py	/^ORMCategory = get_model('catalogue', 'Category')$/;"	kind:variable	line:17
 OSCAR_ALLOW_ANON_CHECKOUT	../web/conf/base.py	/^OSCAR_ALLOW_ANON_CHECKOUT = True$/;"	kind:variable	line:351
@@ -168,6 +170,7 @@ __init__.py	../web/apps/gateway/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/partner/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/partner/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/apps/user/__init__.py	1;"	kind:file	line:1
+__init__.py	../web/apps/user/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../web/conf/__init__.py	1;"	kind:file	line:1
 _attr_boolean_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_boolean_field(attribute):$/;"	kind:function	line:70
 _attr_date_field	../web/apps/dashboard/catalogue/forms.py	/^def _attr_date_field(attribute):$/;"	kind:function	line:80
@@ -259,6 +262,7 @@ dependencies	../web/apps/partner/migrations/0001_initial.py	/^    dependencies =
 dependencies	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../web/apps/user/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:14
 description	../web/apps/offers.py	/^    def description(self):$/;"	kind:member	line:22
 dispatch	../web/apps/dashboard/catalogue/views.py	/^    def dispatch(self, request, *args, **kwargs):$/;"	kind:member	line:206
 document_root	../web/urls.py	/^                          document_root=settings.MEDIA_ROOT)$/;"	kind:variable	line:45
@@ -301,6 +305,7 @@ fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"
 fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:37
 fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:61
 fields	../web/apps/partner/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:78
+fields	../web/apps/user/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:21
 filter_products	../web/apps/dashboard/catalogue/views.py	/^def filter_products(queryset, user):$/;"	kind:function	line:52
 filter_queryset	../web/apps/dashboard/catalogue/views.py	/^    def filter_queryset(self, queryset):$/;"	kind:member	line:100
 form_class	../web/apps/dashboard/catalogue/views.py	/^    form_class = CategoryForm$/;"	kind:variable	line:570
@@ -374,6 +379,7 @@ help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification
 help_text	../web/apps/user/models.py	/^        help_text=_("Receive notification when your page edit is rejected")$/;"	kind:variable	line:70
 help_text	../web/apps/user/models.py	/^        help_text=_("Select language for the admin"),$/;"	kind:variable	line:76
 image_formset	../web/apps/dashboard/catalogue/views.py	/^    image_formset = ProductImageFormSet$/;"	kind:variable	line:194
+initial	../web/apps/user/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:12
 is_moderator	../web/apps/user/models.py	/^    is_moderator = models.BooleanField(_('moderator status'), default=False)$/;"	kind:variable	line:83
 is_verified	../web/apps/user/models.py	/^    is_verified = models.BooleanField(_('verified'), default=False,$/;"	kind:variable	line:85
 items	../web/apps/sitemaps.py	/^    def items(self):$/;"	kind:member	line:41
@@ -477,6 +483,7 @@ name	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^            nam
 name	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^            name='users',$/;"	kind:variable	line:17
 name	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^            name='partner',$/;"	kind:variable	line:15
 name	../web/apps/user/apps.py	/^    name = 'user'$/;"	kind:variable	line:5
+name	../web/apps/user/migrations/0001_initial.py	/^            name='Profile',$/;"	kind:variable	line:20
 name	../web/urls.py	/^        name='django.contrib.sitemaps.views.sitemap')$/;"	kind:variable	line:29
 num_in_stock	../web/apps/catalogue/models.py	/^    def num_in_stock(self):$/;"	kind:member	line:26
 num_in_stock	../web/apps/dashboard/catalogue/forms.py	/^    num_in_stock = forms.IntegerField(required=True)$/;"	kind:variable	line:246
@@ -497,6 +504,7 @@ operations	../web/apps/partner/migrations/0001_initial.py	/^    operations = [$/
 operations	../web/apps/partner/migrations/0002_auto_20141007_2032.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../web/apps/partner/migrations/0003_auto_20150604_1450.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../web/apps/user/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
 options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:112
 options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:138
 options	../web/apps/catalogue/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:152
@@ -514,6 +522,7 @@ options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/
 options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:68
 options	../web/apps/partner/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:93
 options	../web/apps/partner/migrations/0004_auto_20160107_1755.py	/^            options={'ordering': ('name', 'code'), 'verbose_name': 'Fulfillment partner', 'verbose_name_plural': 'Fulfillment partners', 'permissions': (('dashboard_access', 'Can access dashboard'),)},$/;"	kind:variable	line:16
+options	../web/apps/user/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:52
 paginate_by	../web/apps/dashboard/catalogue/views.py	/^    paginate_by = settings.OSCAR_STOCK_ALERTS_PER_PAGE$/;"	kind:variable	line:503
 parent_pricing_policy	../web/apps/partner/strategy.py	/^    def parent_pricing_policy(self, product, children_stock):$/;"	kind:member	line:57
 permanent	../web/apps/dashboard/catalogue/views.py	/^    permanent = False$/;"	kind:variable	line:150
